@@ -82,9 +82,14 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
             </div>
           </div>
 
-          <h3 className="text-white font-bold text-base leading-tight mb-3 line-clamp-1 group-hover:text-blue-400 transition-colors">
-            {product.name}
-          </h3>
+          <div className="mb-3">
+            <span className="text-zinc-500 text-[10px] font-black uppercase tracking-widest block mb-1">
+              Estilo similar a
+            </span>
+            <h3 className="text-white font-bold text-base leading-tight line-clamp-2 group-hover:text-blue-400 transition-colors">
+              {product.name}
+            </h3>
+          </div>
 
           <div className="flex items-baseline gap-2 mb-5">
             <span className="text-white text-xl font-black">

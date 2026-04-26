@@ -47,8 +47,8 @@ export default function Footer() {
               {t("footer.legal")}
             </h4>
             <ul className="flex flex-col gap-4">
-              <li><Link href="/privacy" className="text-zinc-500 hover:text-white transition-colors text-sm font-bold">Política de Privacidad</Link></li>
-              <li><Link href="/terms" className="text-zinc-500 hover:text-white transition-colors text-sm font-bold">Términos de Servicio</Link></li>
+              <li><Link href="/legal" className="text-zinc-500 hover:text-white transition-colors text-sm font-bold">Aviso Legal</Link></li>
+              <li><Link href="/legal#privacidad" className="text-zinc-500 hover:text-white transition-colors text-sm font-bold">Privacidad</Link></li>
             </ul>
           </div>
 

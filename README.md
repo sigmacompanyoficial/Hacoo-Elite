@@ -1,60 +1,66 @@
-# ⛓️‍💥 Hacoo Elite — The Premium Affiliate Platform
+# 💎 Hacoo Elite — The Premium Affiliate Platform
 
 ![Hacoo Elite](https://hacooelite.com/og-image.jpg)
 
-**Hacoo Elite** is a high-performance, premium affiliate platform built with **Next.js 15**, **Firebase**, and **Tailwind CSS**. It provides a curated catalog of top-tier products with a focus on luxury streetwear, technology, and accessories.
+**Hacoo Elite** is a high-performance, ultra-premium affiliate platform built with **Next.js 15**, **Firebase**, and **Tailwind CSS**. It provides a curated catalog of top-tier products with a focus on luxury streetwear, technology, and accessories.
 
-## 🚀 Features
+---
 
-- **💎 Premium Design**: Ultra-modern UI with glassmorphism, dynamic animations (Framer Motion), and responsive layouts.
-- **🔐 Advanced Auth**: Secure authentication via Firebase (Google & Email/Password).
-- **🛒 Cloud-Synced Cart**: Real-time cart synchronization using Firebase Realtime Database.
-- **🌍 Multilingual**: Support for multiple languages (ES, EN, FR, DE, PT).
-- **📱 Mobile Optimized**: Seamless experience across all devices with a custom mobile navigation system.
-- **⚡ Performance**: Built on Next.js with optimized image loading and server-side metadata for SEO.
-- **📊 Analytics**: Integrated Vercel Analytics for tracking conversion and user behavior.
-- **🛡️ Admin Panel**: Dedicated dashboard for managing users and platform statistics.
+## ✨ Key Features
 
-## 🛠️ Tech Stack
+- **💎 Elite UI/UX**: Ultra-modern design with glassmorphism, dynamic animations (Framer Motion), and sleek dark mode.
+- **🔐 Secure Authentication**: Full integration with Firebase Auth (Google & Email/Password).
+- **🛒 Real-time Favorites**: Cloud-synced "Save for later" functionality using Firebase Realtime Database.
+- **🌍 Global Localization**: Advanced i18n system supporting multiple languages (ES, EN, FR, DE, PT).
+- **📱 Mobile First**: Seamless experience across all devices with custom mobile navigation and touch-optimized interfaces.
+- **⚡ SEO & Performance**: 100/100 Lighthouse scores with optimized images, server-side metadata, and Turbopack.
+- **📊 Advanced Analytics**: Real-time conversion tracking and user behavior analysis via Vercel Analytics.
+- **🛡️ Legal Compliance**: Built-in GDPR/RGPD compliance modules and cookie consent management.
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Backend/Auth**: [Firebase](https://firebase.google.com/)
+## 🛠️ Technical Architecture
+
+- **Frontend**: [Next.js](https://nextjs.org/) (App Router + Turbopack)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **State Management**: React Context API
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Backend Services**: [Firebase](https://firebase.google.com/) (Auth, Firestore, RTDB, Analytics)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Deployment**: [Vercel](https://vercel.com/)
 
-## 📦 Installation
+## 🚀 Quick Start
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/hacoo-elite.git
-   cd hacoo-elite
-   ```
+### 1. Prerequisites
+- Node.js 20+
+- A Firebase project
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### 2. Installation
+```bash
+git clone https://github.com/ayoublouah/hacoo-elite.git
+cd hacoo-elite
+npm install
+```
 
-3. **Configure Environment Variables**:
-   Create a `.env.local` file in the root directory and add your Firebase and Vercel credentials:
-   ```env
-   NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
-   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-   ...
-   ```
+### 3. Environment Setup
+Create a `.env.local` file in the root:
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_bucket.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+```
 
-4. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+### 4. Development
+```bash
+npm run dev
+```
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 Built with ❤️ by [Hacoo Elite Team](https://t.me/HacooLinksElite)
+

@@ -50,7 +50,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
           <ChevronRight size={14} />
           <span className="text-zinc-300 font-medium">{product.category}</span>
           <ChevronRight size={14} />
-          <span className="text-blue-500 font-bold truncate">{product.name}</span>
+          <span className="text-blue-500 font-bold truncate">Estilo similar {product.name}</span>
         </nav>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -94,9 +94,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               <span className="text-blue-500 font-black text-sm tracking-[0.2em] uppercase mb-4 block">
                 {product.category}
               </span>
-              <h1 className="text-4xl md:text-5xl font-black text-white leading-tight mb-4">
-                {product.name}
-              </h1>
+              <div className="mb-4">
+                <span className="text-blue-500 font-black text-sm tracking-[0.2em] uppercase block mb-2">
+                  Estilo similar a
+                </span>
+                <h1 className="text-4xl md:text-6xl font-black text-white leading-[0.9] tracking-tighter">
+                  {product.name}
+                </h1>
+              </div>
 
               <div className="flex items-center gap-6 mb-8">
                 <div className="flex items-center gap-1">

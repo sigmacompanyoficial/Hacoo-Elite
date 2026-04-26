@@ -11,6 +11,7 @@ import { CartProvider } from "@/context/CartContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Analytics } from "@vercel/analytics/next";
 import SocialBarAd from "@/components/SocialBarAd";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const inter = Inter({
@@ -72,6 +73,7 @@ export default function RootLayout({
         </AuthProvider>
         <Analytics />
         <SocialBarAd />
+        <CookieConsent />
       </body>
     </html>
   );
