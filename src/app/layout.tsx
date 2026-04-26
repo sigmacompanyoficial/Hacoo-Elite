@@ -4,6 +4,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileNavbar from "@/components/MobileNavbar";
+import PromoToast from "@/components/PromoToast";
+import AdBanner from "@/components/AdBanner";
 import { AuthProvider } from "@/context/AuthContext";
 import { CartProvider } from "@/context/CartContext";
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -19,6 +21,10 @@ export const metadata: Metadata = {
   title: "HacooElite — Ofertas Exclusivas y Cupones de Descuento",
   description:
     "Descubre los mejores productos de Hacoo con hasta un 90% de descuento. Usa el código POLE14 para un 15% extra. +100 enlaces diarios en nuestro canal de Telegram.",
+  icons: {
+    icon: "/LOGO.png",
+    apple: "/LOGO.png",
+  },
   keywords: [
     "Hacoo",
     "ofertas",
@@ -32,6 +38,7 @@ export const metadata: Metadata = {
     description:
       "Los mejores productos de Hacoo al precio más bajo. Código POLE14: 15% OFF.",
     type: "website",
+    images: ["/LOGO.png"],
   },
 };
 
@@ -52,8 +59,10 @@ export default function RootLayout({
                   <main id="main-content" className="pb-24 md:pb-0">
                     {children}
                   </main>
+                  <AdBanner />
                   <Footer />
                   <MobileNavbar />
+                  <PromoToast />
                 </div>
               </ThemeProvider>
             </LanguageProvider>

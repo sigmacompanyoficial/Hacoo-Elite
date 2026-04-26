@@ -2,6 +2,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import ProductCard from "@/components/ProductCard";
+import AdBanner from "@/components/AdBanner";
 import { products } from "@/data/products";
 import { ArrowRight, ShieldCheck, Zap, Send, ShoppingBag } from "lucide-react";
 import Link from "next/link";
@@ -77,6 +78,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <AdBanner />
 
       {/* 3. FEATURED PRODUCTS PREVIEW */}
       <section className="section">

@@ -15,9 +15,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           {/* Column 1: Brand */}
           <div className="flex flex-col gap-6">
-            <Link href="/" className="flex items-center gap-2 text-2xl font-black italic uppercase tracking-tighter">
-              <ShoppingBag className="text-blue-500" size={28} />
-              <span>Hacoo<span className="text-blue-500">Elite</span></span>
+            <Link href="/" className="flex items-center h-12 w-auto">
+              <img 
+                src="/LOGO.png" 
+                alt="Hacoo Elite Logo" 
+                className="h-full w-auto object-contain"
+              />
             </Link>
             <p className="text-zinc-500 text-sm leading-relaxed">
               {t("footer.desc")}

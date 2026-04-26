@@ -47,7 +47,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+          className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10 md:mb-16"
         >
           <Link href="/products" className="w-full sm:w-auto bg-blue-600 text-white px-10 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 hover:bg-blue-500 transition-all shadow-2xl shadow-blue-500/20">
             <ShoppingBag size={22} />
@@ -63,7 +63,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="mt-60 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 md:gap-20 border-t border-zinc-900 pt-24 w-full max-w-3xl"
+          className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 md:gap-20 border-t border-zinc-900 pt-12 md:pt-16 w-full max-w-3xl"
         >
           <div className="flex flex-col">
             <span className="text-3xl md:text-5xl font-black text-white italic tracking-tighter">5K+</span>
