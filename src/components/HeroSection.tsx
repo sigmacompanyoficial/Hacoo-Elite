@@ -63,7 +63,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 md:gap-20 border-t border-zinc-900 pt-12 w-full max-w-3xl"
+          className="mt-32 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 md:gap-20 border-t border-zinc-900 pt-16 w-full max-w-3xl"
         >
           <div className="flex flex-col">
             <span className="text-3xl md:text-5xl font-black text-white italic tracking-tighter">5K+</span>
