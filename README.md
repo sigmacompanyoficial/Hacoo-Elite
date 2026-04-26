@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⛓️‍💥 Hacoo Elite — The Premium Affiliate Platform
 
-## Getting Started
+![Hacoo Elite](https://hacooelite.com/og-image.jpg)
 
-First, run the development server:
+**Hacoo Elite** is a high-performance, premium affiliate platform built with **Next.js 15**, **Firebase**, and **Tailwind CSS**. It provides a curated catalog of top-tier products with a focus on luxury streetwear, technology, and accessories.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **💎 Premium Design**: Ultra-modern UI with glassmorphism, dynamic animations (Framer Motion), and responsive layouts.
+- **🔐 Advanced Auth**: Secure authentication via Firebase (Google & Email/Password).
+- **🛒 Cloud-Synced Cart**: Real-time cart synchronization using Firebase Realtime Database.
+- **🌍 Multilingual**: Support for multiple languages (ES, EN, FR, DE, PT).
+- **📱 Mobile Optimized**: Seamless experience across all devices with a custom mobile navigation system.
+- **⚡ Performance**: Built on Next.js with optimized image loading and server-side metadata for SEO.
+- **📊 Analytics**: Integrated Vercel Analytics for tracking conversion and user behavior.
+- **🛡️ Admin Panel**: Dedicated dashboard for managing users and platform statistics.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Backend/Auth**: [Firebase](https://firebase.google.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-## Learn More
+## 📦 Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/hacoo-elite.git
+   cd hacoo-elite
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Configure Environment Variables**:
+   Create a `.env.local` file in the root directory and add your Firebase and Vercel credentials:
+   ```env
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+   ...
+   ```
 
-## Deploy on Vercel
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
+
+---
+
+Built with ❤️ by [Hacoo Elite Team](https://t.me/HacooLinksElite)

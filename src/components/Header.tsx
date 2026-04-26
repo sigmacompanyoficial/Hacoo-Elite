@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingBag, Menu, X, Send, User, LogOut, Settings } from "lucide-react";
+import { ShoppingBag, Menu, X, Send, User, LogOut, Settings, ShieldCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
@@ -13,7 +13,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { user, logout } = useAuth();
+  const { user, profile, logout } = useAuth();
   const { cartCount } = useCart();
   const { t, language, setLanguage } = useLanguage();
 
@@ -34,7 +34,6 @@ export default function Header() {
   const navLinks = [
     { name: t("nav.start"), href: "/" },
     { name: t("nav.catalog"), href: "/products" },
-    { name: "Soporte", href: "/atencion-al-cliente" },
   ];
 
   return (
@@ -74,6 +73,17 @@ export default function Header() {
 
           {/* Right: Actions */}
           <div className="flex items-center gap-2 sm:gap-4">
+            {/* Admin Link (Only for admins) */}
+            {profile?.role === "admin" && (
+              <Link 
+                href="/admin" 
+                className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-blue-600/10 text-blue-500 border border-blue-500/20 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all shadow-lg shadow-blue-600/5"
+              >
+                <ShieldCheck size={14} />
+                Admin
+              </Link>
+            )}
+
             {/* Configuration Button */}
             <div className="relative group">
               <button className="p-2 text-zinc-400 hover:text-white transition-colors rounded-full hover:bg-zinc-900">
@@ -120,24 +130,24 @@ export default function Header() {
             {/* Auth Button */}
             <div className="hidden md:block">
               {user ? (
-                <div className="flex items-center gap-4">
+                <Link href="/profile" className="flex items-center gap-4 group cursor-pointer">
                   <div className="flex flex-col items-end">
-                    <span className="text-white text-xs font-bold">{user.displayName || "Usuario"}</span>
+                    <span className="text-white text-xs font-bold group-hover:text-blue-500 transition-colors">{user.displayName || "Usuario"}</span>
                     <button
-                      onClick={() => logout()}
+                      onClick={(e) => { e.preventDefault(); logout(); }}
                       className="text-zinc-500 text-[10px] uppercase font-black tracking-widest hover:text-red-500 transition-colors"
                     >
                       Cerrar sesión
                     </button>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden">
+                  <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden group-hover:border-blue-500/50 transition-all shadow-xl">
                     {user.photoURL ? (
                       <img src={user.photoURL} alt={user.displayName || ""} className="w-full h-full object-cover" />
                     ) : (
                       <User size={20} />
                     )}
                   </div>
-                </div>
+                </Link>
               ) : (
                 <Link href="/auth" className="bg-zinc-900 text-white px-4 py-2 rounded-lg text-sm font-bold border border-zinc-800 hover:bg-zinc-800 transition-all">
                   Iniciar Sesión
@@ -215,6 +225,23 @@ export default function Header() {
                   <Send size={32} className="text-blue-500" />
                 </a>
               </motion.div>
+
+              {profile?.role === "admin" && (
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 + (navLinks.length + 1) * 0.1 }}
+                >
+                  <Link
+                    href="/admin"
+                    className="text-5xl font-black italic uppercase tracking-tighter text-blue-500 flex items-center gap-4 hover:text-blue-400 transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Admin
+                    <ShieldCheck size={32} />
+                  </Link>
+                </motion.div>
+              )}
             </nav>
 
             <motion.div
@@ -224,8 +251,12 @@ export default function Header() {
               className="mt-auto"
             >
               {user ? (
-                <div className="flex items-center gap-4 p-5 bg-zinc-900 rounded-2xl border border-zinc-800">
-                  <div className="w-14 h-14 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden">
+                <Link 
+                  href="/profile" 
+                  className="flex items-center gap-4 p-5 bg-zinc-900 rounded-2xl border border-zinc-800 group active:scale-[0.98] transition-all"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <div className="w-14 h-14 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden group-hover:border-blue-500/50 transition-all">
                     {user.photoURL ? (
                       <img src={user.photoURL} alt={user.displayName || ""} className="w-full h-full object-cover" />
                     ) : (
@@ -233,15 +264,15 @@ export default function Header() {
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-white font-black uppercase text-sm tracking-tight">{user.displayName || "Usuario"}</span>
+                    <span className="text-white font-black uppercase text-sm tracking-tight group-hover:text-blue-500 transition-colors">{user.displayName || "Usuario"}</span>
                     <button
-                      onClick={() => { logout(); setIsMenuOpen(false); }}
+                      onClick={(e) => { e.preventDefault(); logout(); setIsMenuOpen(false); }}
                       className="text-red-500 text-[10px] font-black uppercase tracking-[0.2em] text-left mt-1"
                     >
                       Cerrar sesión
                     </button>
                   </div>
-                </div>
+                </Link>
               ) : (
                 <Link
                   href="/auth"

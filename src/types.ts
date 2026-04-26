@@ -12,4 +12,5 @@ export interface Product {
   isExclusive: boolean;
   rating: number;
   reviews: number;
+  isNew?: boolean;
 }

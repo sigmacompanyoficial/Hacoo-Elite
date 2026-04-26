@@ -55,7 +55,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left: Image Section */}
-          <div className="lg:col-span-7 sticky top-32">
+          <div className="lg:col-span-7 lg:sticky lg:top-32">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}

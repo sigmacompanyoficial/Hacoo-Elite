@@ -9,6 +9,8 @@ import AdBanner from "@/components/AdBanner";
 import { AuthProvider } from "@/context/AuthContext";
 import { CartProvider } from "@/context/CartContext";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { Analytics } from "@vercel/analytics/next";
+import SocialBarAd from "@/components/SocialBarAd";
 import "./globals.css";
 
 const inter = Inter({
@@ -68,6 +70,8 @@ export default function RootLayout({
             </LanguageProvider>
           </CartProvider>
         </AuthProvider>
+        <Analytics />
+        <SocialBarAd />
       </body>
     </html>
   );

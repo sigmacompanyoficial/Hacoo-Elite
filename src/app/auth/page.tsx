@@ -8,7 +8,8 @@ import {
   signInWithPopup,
   GoogleAuthProvider
 } from "firebase/auth";
-import { auth } from "@/lib/firebase";
+import { auth, db } from "@/lib/firebase";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
@@ -48,7 +49,19 @@ export default function AuthPage() {
       } else {
         if (!name) throw new Error("Por favor, introduce tu nombre");
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        await updateProfile(userCredential.user, { displayName: name });
+        const user = userCredential.user;
+        
+        await updateProfile(user, { displayName: name });
+        
+        // Save to Firestore
+        await setDoc(doc(db, "users", user.uid), {
+          uid: user.uid,
+          displayName: name,
+          email: user.email,
+          photoURL: user.photoURL,
+          createdAt: serverTimestamp(),
+          role: "user" // Default role
+        });
       }
       router.push("/");
     } catch (err: any) {
@@ -73,7 +86,19 @@ export default function AuthPage() {
     setLoading(true);
     const provider = new GoogleAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
+      const userCredential = await signInWithPopup(auth, provider);
+      const user = userCredential.user;
+
+      // Save/Update in Firestore
+      await setDoc(doc(db, "users", user.uid), {
+        uid: user.uid,
+        displayName: user.displayName,
+        email: user.email,
+        photoURL: user.photoURL,
+        lastLogin: serverTimestamp(),
+        role: "user"
+      }, { merge: true });
+
       router.push("/");
     } catch (err: any) {
       setError(err.message);

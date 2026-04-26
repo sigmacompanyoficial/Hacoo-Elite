@@ -19,7 +19,10 @@ const fadeInUp = {
 };
 
 export default function Home() {
-  const featuredProducts = products.slice(0, 4);
+  const featuredProducts = products.filter(p => p.isNew).slice(0, 4);
+  
+  // Fallback if no new products
+  const productsToShow = featuredProducts.length > 0 ? featuredProducts : products.slice(0, 4);
 
   return (
     <div className="home-wrapper">
@@ -99,7 +102,7 @@ export default function Home() {
           </motion.div>
 
           <div className="product-grid">
-            {featuredProducts.map((product) => (
+            {productsToShow.map((product) => (
               <motion.div key={product.id} {...fadeInUp}>
                 <ProductCard product={product} />
               </motion.div>

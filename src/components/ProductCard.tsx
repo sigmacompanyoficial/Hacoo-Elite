@@ -82,12 +82,12 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
             </div>
           </div>
 
-          <h3 className="text-white font-bold text-lg leading-tight mb-3 line-clamp-1 group-hover:text-blue-400 transition-colors">
+          <h3 className="text-white font-bold text-base leading-tight mb-3 line-clamp-1 group-hover:text-blue-400 transition-colors">
             {product.name}
           </h3>
 
           <div className="flex items-baseline gap-2 mb-5">
-            <span className="text-white text-2xl font-black">
+            <span className="text-white text-xl font-black">
               {product.price.toFixed(2)}€
             </span>
             <span className="text-zinc-500 text-sm line-through font-medium">

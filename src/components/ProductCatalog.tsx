@@ -6,6 +6,7 @@ import ProductCard from "./ProductCard";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { Search, Filter, ChevronDown, ChevronUp, X } from "lucide-react";
+import AdBanner from "./AdBanner";
 
 export default function ProductCatalog() {
   const { t } = useLanguage();
@@ -45,10 +46,10 @@ export default function ProductCatalog() {
   return (
     <section id="catalogo" className="py-20">
       <div className="mb-16">
-        <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase italic">
+        <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tighter uppercase italic">
           {t("catalog.title")} <span className="text-blue-500">Elite</span>
         </h2>
-        <p className="text-zinc-400 text-xl max-w-3xl leading-relaxed">
+        <p className="text-zinc-400 text-lg max-w-3xl leading-relaxed">
           {t("catalog.subtitle")}
         </p>
       </div>
@@ -184,6 +185,10 @@ export default function ProductCatalog() {
           <p className="text-zinc-500 max-w-sm mx-auto">{t("catalog.empty_desc")}</p>
         </div>
       )}
+      
+      <div className="mt-20">
+        <AdBanner />
+      </div>
     </section>
   );
 }
