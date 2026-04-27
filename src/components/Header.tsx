@@ -132,7 +132,7 @@ export default function Header() {
               {user ? (
                 <Link href="/profile" className="flex items-center gap-4 group cursor-pointer">
                   <div className="flex flex-col items-end">
-                    <span className="text-white text-xs font-bold group-hover:text-blue-500 transition-colors">{user.displayName || "Usuario"}</span>
+                    <span className="text-white text-xs font-bold group-hover:text-blue-500 transition-colors">{profile?.displayName || "Usuario"}</span>
                     <button
                       onClick={(e) => { e.preventDefault(); logout(); }}
                       className="text-zinc-500 text-[10px] uppercase font-black tracking-widest hover:text-red-500 transition-colors"
@@ -141,8 +141,8 @@ export default function Header() {
                     </button>
                   </div>
                   <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden group-hover:border-blue-500/50 transition-all shadow-xl">
-                    {user.photoURL ? (
-                      <img src={user.photoURL} alt={user.displayName || ""} className="w-full h-full object-cover" />
+                    {profile?.photoURL ? (
+                      <img src={profile.photoURL} alt={profile.displayName || ""} className="w-full h-full object-cover" />
                     ) : (
                       <User size={20} />
                     )}
@@ -257,14 +257,14 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="w-14 h-14 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden group-hover:border-blue-500/50 transition-all">
-                    {user.photoURL ? (
-                      <img src={user.photoURL} alt={user.displayName || ""} className="w-full h-full object-cover" />
+                    {profile?.photoURL ? (
+                      <img src={profile.photoURL} alt={profile.displayName || ""} className="w-full h-full object-cover" />
                     ) : (
                       <User size={28} />
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-white font-black uppercase text-sm tracking-tight group-hover:text-blue-500 transition-colors">{user.displayName || "Usuario"}</span>
+                    <span className="text-white font-black uppercase text-sm tracking-tight group-hover:text-blue-500 transition-colors">{profile?.displayName || "Usuario"}</span>
                     <button
                       onClick={(e) => { e.preventDefault(); logout(); setIsMenuOpen(false); }}
                       className="text-red-500 text-[10px] font-black uppercase tracking-[0.2em] text-left mt-1"

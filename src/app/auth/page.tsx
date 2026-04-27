@@ -1,15 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { 
-  createUserWithEmailAndPassword, 
-  signInWithEmailAndPassword,
-  updateProfile,
-  signInWithPopup,
-  GoogleAuthProvider
-} from "firebase/auth";
-import { auth, db } from "@/lib/firebase";
-import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { supabase } from "@/lib/supabase";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
@@ -45,37 +37,49 @@ export default function AuthPage() {
 
     try {
       if (isLogin) {
-        await signInWithEmailAndPassword(auth, email, password);
+        const { error: authError } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+        if (authError) throw authError;
       } else {
         if (!name) throw new Error("Por favor, introduce tu nombre");
-        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-        const user = userCredential.user;
         
-        await updateProfile(user, { displayName: name });
-        
-        // Save to Firestore
-        await setDoc(doc(db, "users", user.uid), {
-          uid: user.uid,
-          displayName: name,
-          email: user.email,
-          photoURL: user.photoURL,
-          createdAt: serverTimestamp(),
-          role: "user" // Default role
+        const { data: authData, error: authError } = await supabase.auth.signUp({
+          email,
+          password,
+          options: {
+            data: {
+              full_name: name,
+            }
+          }
         });
+        
+        if (authError) throw authError;
+        
+        const user = authData.user;
+        if (user) {
+          // Save to profiles table
+          const { error: profileError } = await supabase
+            .from("profiles")
+            .insert([
+              { 
+                id: user.id, 
+                display_name: name, 
+                email: user.email, 
+                photo_url: null,
+                role: "user" 
+              }
+            ]);
+          
+          if (profileError) {
+            console.error("Error creating profile:", profileError.message, profileError.details, profileError.hint);
+          }
+        }
       }
       router.push("/");
     } catch (err: any) {
-      let message = "Ocurrió un error inesperado";
-      if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password') {
-        message = "Credenciales incorrectas";
-      } else if (err.code === 'auth/email-already-in-use') {
-        message = "Este correo ya está registrado";
-      } else if (err.code === 'auth/weak-password') {
-        message = "La contraseña debe tener al menos 6 caracteres";
-      } else {
-        message = err.message;
-      }
-      setError(message);
+      setError(err.message || "Ocurrió un error inesperado");
     } finally {
       setLoading(false);
     }
@@ -84,25 +88,17 @@ export default function AuthPage() {
   const handleGoogleSignIn = async () => {
     setError("");
     setLoading(true);
-    const provider = new GoogleAuthProvider();
     try {
-      const userCredential = await signInWithPopup(auth, provider);
-      const user = userCredential.user;
-
-      // Save/Update in Firestore
-      await setDoc(doc(db, "users", user.uid), {
-        uid: user.uid,
-        displayName: user.displayName,
-        email: user.email,
-        photoURL: user.photoURL,
-        lastLogin: serverTimestamp(),
-        role: "user"
-      }, { merge: true });
-
-      router.push("/");
+      const { error: authError } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: `${window.location.origin}/auth/callback`
+        }
+      });
+      if (authError) throw authError;
+      // Note: Redirect happens automatically for OAuth
     } catch (err: any) {
       setError(err.message);
-    } finally {
       setLoading(false);
     }
   };
@@ -217,9 +213,9 @@ export default function AuthPage() {
                 <div className="flex justify-between items-center mb-2.5 ml-1">
                   <label className="input-label mb-0">Contraseña</label>
                   {isLogin && (
-                    <button type="button" className="text-[10px] font-bold text-blue-500/60 hover:text-blue-400 transition-colors uppercase tracking-widest">
+                    <Link href="/auth/forgot-password" type="button" className="text-[10px] font-bold text-blue-500/60 hover:text-blue-400 transition-colors uppercase tracking-widest">
                       ¿Olvidaste?
-                    </button>
+                    </Link>
                   )}
                 </div>
                 <div className="input-wrapper">

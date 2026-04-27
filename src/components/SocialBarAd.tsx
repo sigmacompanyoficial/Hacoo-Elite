@@ -7,16 +7,25 @@ export default function SocialBarAd() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "//pl26141334.highperformanceformat.com/56/67/7a/56677aa42d45b14e542566c759086f68.js";
-    script.async = true;
+    // Only load the script after a short delay or user interaction
+    // to prevent aggressive popunders on page load/scroll
+    const timer = setTimeout(() => {
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "//pl26141334.highperformanceformat.com/56/67/7a/56677aa42d45b14e542566c759086f68.js";
+      script.async = true;
+      script.id = "socialbar-script";
 
-    document.body.appendChild(script);
+      document.body.appendChild(script);
+    }, 2000); // 2 second delay
 
     return () => {
-      // It's hard to clean up these types of scripts sometimes, but we try
+      clearTimeout(timer);
       try {
+        const script = document.getElementById("socialbar-script");
+        if (script) script.remove();
+        
+        // Remove the actual bar if possible
         const ad = document.getElementById("socialbar-ad");
         if (ad) ad.remove();
       } catch (e) {}

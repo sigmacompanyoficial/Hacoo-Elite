@@ -11,11 +11,11 @@ import {
   ChevronRight,
   Search,
   ExternalLink,
-  Plus
+  Plus,
+  Database
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { collection, getDocs, query, limit } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { supabase } from "@/lib/supabase";
 
 export default function AdminDashboard() {
   const { profile } = useAuth();
@@ -30,9 +30,22 @@ export default function AdminDashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const usersSnap = await getDocs(query(collection(db, "users"), limit(5)));
-        setRecentUsers(usersSnap.docs.map(doc => ({ id: doc.id, ...doc.data() })));
-        setStats(prev => ({ ...prev, totalUsers: usersSnap.size }));
+        const { data, count, error } = await supabase
+          .from("profiles")
+          .select("*", { count: 'exact' })
+          .limit(5)
+          .order('id', { ascending: false });
+
+        if (data && !error) {
+          setRecentUsers(data.map(u => ({
+            id: u.id,
+            displayName: u.display_name,
+            email: u.email,
+            photoURL: u.photo_url,
+            role: u.role
+          })));
+          setStats(prev => ({ ...prev, totalUsers: count || 0 }));
+        }
       } catch (err) {
         console.error("Error fetching admin stats", err);
       }
@@ -150,11 +163,11 @@ export default function AdminDashboard() {
             <h3 className="text-lg font-black text-white uppercase italic mb-6">Estado del Sistema</h3>
             <div className="space-y-4">
               <div className="flex items-center justify-between p-4 bg-emerald-500/5 border border-emerald-500/10 rounded-2xl">
-                <span className="text-zinc-400 text-xs font-bold uppercase tracking-widest">API Firebase</span>
+                <span className="text-zinc-400 text-xs font-bold uppercase tracking-widest">API Supabase</span>
                 <span className="text-emerald-500 text-xs font-black uppercase tracking-widest">Activo</span>
               </div>
               <div className="flex items-center justify-between p-4 bg-blue-500/5 border border-blue-500/10 rounded-2xl">
-                <span className="text-zinc-400 text-xs font-bold uppercase tracking-widest">Firestore DB</span>
+                <span className="text-zinc-400 text-xs font-bold uppercase tracking-widest">PostgreSQL DB</span>
                 <span className="text-blue-500 text-xs font-black uppercase tracking-widest">Conectado</span>
               </div>
             </div>
@@ -162,13 +175,13 @@ export default function AdminDashboard() {
 
           <div className="bg-blue-600 p-8 rounded-3xl shadow-xl shadow-blue-600/20">
             <h3 className="text-white font-black uppercase italic mb-2">Ayuda Técnica</h3>
-            <p className="text-blue-100 text-sm mb-6 leading-relaxed">¿Necesitas añadir más administradores? Debes hacerlo desde la consola de Firebase modificando el campo 'role' en el documento del usuario.</p>
+            <p className="text-blue-100 text-sm mb-6 leading-relaxed">¿Necesitas añadir más administradores? Debes hacerlo desde la consola de Supabase modificando el campo 'role' en la tabla 'profiles'.</p>
             <a 
-              href="https://console.firebase.google.com/" 
+              href="https://supabase.com/dashboard" 
               target="_blank"
               className="w-full bg-white text-black py-4 rounded-xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-zinc-100 transition-colors"
             >
-              Consola Firebase
+              Consola Supabase
               <ExternalLink size={14} />
             </a>
           </div>

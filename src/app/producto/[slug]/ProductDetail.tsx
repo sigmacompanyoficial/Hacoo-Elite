@@ -20,6 +20,7 @@ import { motion } from "framer-motion";
 
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
+import AdBanner from "@/components/AdBanner";
 
 interface ProductDetailProps {
   product: Product;
@@ -197,6 +198,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               </div>
             </motion.div>
           </div>
+        </div>
+      </div>
+      
+      {/* Bottom Ad Section */}
+      <div className="container mx-auto px-6 mt-16">
+        <div className="bg-zinc-900/30 rounded-[2rem] border border-zinc-800/50 p-8">
+          <p className="text-center text-zinc-600 text-[10px] font-black uppercase tracking-widest mb-6">Contenido Patrocinado</p>
+          <AdBanner />
         </div>
       </div>
     </div>

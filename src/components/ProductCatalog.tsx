@@ -162,17 +162,25 @@ export default function ProductCatalog() {
       {filtered.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           <AnimatePresence mode="popLayout">
-            {filtered.map((product) => (
-              <motion.div
-                key={product.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-                layout
-              >
-                <ProductCard product={product} />
-              </motion.div>
+            {filtered.map((product, index) => (
+              <div key={product.id || index} className="contents">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  layout
+                >
+                  <ProductCard product={product} />
+                </motion.div>
+                
+                {/* Insert ad every 8 products (or 4 on mobile) */}
+                {(index + 1) % 8 === 0 && (
+                  <div className="col-span-full py-4">
+                    <AdBanner />
+                  </div>
+                )}
+              </div>
             ))}
           </AnimatePresence>
         </div>

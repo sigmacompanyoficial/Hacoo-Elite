@@ -3,8 +3,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { Product } from "@/types";
 import { useAuth } from "./AuthContext";
-import { rtdb } from "@/lib/firebase";
-import { ref, set, onValue, off } from "firebase/database";
+import { supabase } from "@/lib/supabase";
 
 interface CartItem extends Product {
   quantity: number;
@@ -37,11 +36,16 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   // Handle Sync from DB or LocalStorage
   useEffect(() => {
     if (user) {
-      const cartRef = ref(rtdb, `carts/${user.uid}`);
-      onValue(cartRef, (snapshot) => {
-        const data = snapshot.val();
-        if (data) {
-          setCartItems(data);
+      // Fetch cart from Supabase
+      const fetchCart = async () => {
+        const { data, error } = await supabase
+          .from("carts")
+          .select("items")
+          .eq("user_id", user.id)
+          .single();
+
+        if (data && !error) {
+          setCartItems(data.items || []);
         } else {
           // If no cloud cart, maybe check local storage to migrate?
           const savedCart = localStorage.getItem("hacoo-cart");
@@ -50,7 +54,11 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
               const parsed = JSON.parse(savedCart);
               if (parsed.length > 0) {
                 setCartItems(parsed);
-                set(cartRef, parsed); // Upload to cloud
+                // Upload to cloud
+                await supabase.from("carts").upsert({ 
+                  user_id: user.id, 
+                  items: parsed 
+                });
                 localStorage.removeItem("hacoo-cart"); // Cleanup
               }
             } catch (e) {}
@@ -58,8 +66,28 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
              setCartItems([]);
           }
         }
-      });
-      return () => off(cartRef);
+      };
+
+      fetchCart();
+      
+      // Realtime subscription? Optional, but here's how:
+      const channel = supabase
+        .channel(`public:carts:user_id=eq.${user.id}`)
+        .on('postgres_changes', { 
+          event: '*', 
+          schema: 'public', 
+          table: 'carts',
+          filter: `user_id=eq.${user.id}`
+        }, (payload: any) => {
+          if (payload.new) {
+            setCartItems(payload.new.items || []);
+          }
+        })
+        .subscribe();
+
+      return () => {
+        supabase.removeChannel(channel);
+      };
     } else {
       // Not logged in: Use local storage
       const savedCart = localStorage.getItem("hacoo-cart");
@@ -76,10 +104,12 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   }, [user]);
 
   // Sync state to destination (DB or LocalStorage)
-  const syncCart = (items: CartItem[]) => {
+  const syncCart = async (items: CartItem[]) => {
     if (user) {
-      const cartRef = ref(rtdb, `carts/${user.uid}`);
-      set(cartRef, items);
+      await supabase.from("carts").upsert({ 
+        user_id: user.id, 
+        items: items 
+      });
     } else {
       localStorage.setItem("hacoo-cart", JSON.stringify(items));
     }

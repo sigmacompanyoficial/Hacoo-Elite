@@ -17,6 +17,7 @@ import {
   Tag
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import AdBanner from "@/components/AdBanner";
 
 export default function CartPage() {
   const { cartItems, removeFromCart, updateQuantity, cartCount, totalPrice, clearCart } = useCart();
@@ -217,6 +218,11 @@ export default function CartPage() {
                   </div>
                   <span className="text-xs text-zinc-400 font-medium leading-relaxed">Accede a precios de fábrica directos desde Hacoo</span>
                 </div>
+              </div>
+              
+              {/* Cart Page Ad */}
+              <div className="mt-8">
+                <AdBanner />
               </div>
             </div>
           </div>

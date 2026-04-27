@@ -6,7 +6,9 @@ import AdBanner from "@/components/AdBanner";
 import { products } from "@/data/products";
 import { ArrowRight, ShieldCheck, Zap, Send, ShoppingBag } from "lucide-react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useSearchParams } from "next/navigation";
+import { useState, useEffect, Suspense } from "react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -18,9 +20,19 @@ const fadeInUp = {
   viewport: { once: true }
 };
 
-export default function Home() {
+function HomeContent() {
+  const searchParams = useSearchParams();
+  const [showVerifiedToast, setShowVerifiedToast] = useState(false);
   const featuredProducts = products.filter(p => p.isNew).slice(0, 4);
   
+  useEffect(() => {
+    if (searchParams.get('verified') === 'true') {
+      setShowVerifiedToast(true);
+      const timer = setTimeout(() => setShowVerifiedToast(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [searchParams]);
+
   // Fallback if no new products
   const productsToShow = featuredProducts.length > 0 ? featuredProducts : products.slice(0, 4);
 
@@ -28,6 +40,7 @@ export default function Home() {
     <div className="home-wrapper">
       {/* 1. HERO SECTION */}
       <HeroSection />
+      <AdBanner />
 
       {/* 2. VALUE PROPOSITION SECTION */}
       <section className="section bg-secondary/30">
@@ -141,6 +154,46 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      <AdBanner />
+
+      {/* Verification Toast */}
+      <AnimatePresence>
+        {showVerifiedToast && (
+          <motion.div
+            initial={{ opacity: 0, y: 100, x: '-50%' }}
+            animate={{ opacity: 1, y: -40, x: '-50%' }}
+            exit={{ opacity: 0, y: 100, x: '-50%' }}
+            className="fixed bottom-0 left-1/2 z-[2000] w-[calc(100%-2rem)] max-w-md"
+          >
+            <div className="bg-emerald-500 text-white px-6 py-4 rounded-2xl shadow-2xl shadow-emerald-500/20 flex items-center justify-between gap-4 border border-emerald-400/20 backdrop-blur-xl">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
+                  <ShieldCheck size={20} />
+                </div>
+                <div>
+                  <p className="font-black text-sm uppercase tracking-tight">Correo verificado</p>
+                  <p className="text-white/80 text-xs font-bold italic">¡Ya puedes iniciar sesión!</p>
+                </div>
+              </div>
+              <button 
+                onClick={() => setShowVerifiedToast(false)}
+                className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+              >
+                <Zap size={16} />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#080808]" />}>
+      <HomeContent />
+    </Suspense>
   );
 }
