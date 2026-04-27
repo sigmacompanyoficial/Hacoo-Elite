@@ -19,31 +19,83 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "HacooElite — Ofertas Exclusivas y Cupones de Descuento",
+  title: {
+    default: "HacooElite — Los Mejores Enlaces y Cupones Hacoo 2026",
+    template: "%s | Hacoo Elite"
+  },
   description:
-    "Descubre los mejores productos de Hacoo con hasta un 90% de descuento. Usa el código POLE14 para un 15% extra. +100 enlaces diarios en nuestro canal de Telegram.",
+    "Descubre los mejores productos de Hacoo con enlaces actualizados diariamente. Cupones de descuento exclusivos, ofertas flash y guía de compra para Hacoo. Usa el código POLE14 para un 15% extra.",
+  metadataBase: new URL("https://hacoo-elite.vercel.app/"), // Ajustar si el dominio es diferente
+  alternates: {
+    canonical: "/",
+  },
   icons: {
-    icon: "/LOGO.png",
+    icon: "/favicon.ico",
     apple: "/LOGO.png",
   },
   keywords: [
     "Hacoo",
-    "ofertas",
-    "cupones",
-    "descuentos",
+    "Hacoo links",
+    "Hacoo elite",
+    "enlaces Hacoo",
+    "cupones Hacoo",
+    "descuentos Hacoo",
+    "Hacoo 2026",
+    "Hacoo España",
     "POLE14",
-    "afiliados",
+    "Hacoo app links",
   ],
+  authors: [{ name: "Hacoo Elite Team" }],
+  creator: "Hacoo Elite",
   openGraph: {
-    title: "HacooElite — Ofertas Exclusivas",
-    description:
-      "Los mejores productos de Hacoo al precio más bajo. Código POLE14: 15% OFF.",
+    title: "HacooElite — Los Mejores Enlaces y Cupones Hacoo",
+    description: "Los mejores productos de Hacoo al precio más bajo. Actualizado diariamente con nuevos enlaces y cupones exclusivos.",
+    url: "https://hacooelite.com",
+    siteName: "Hacoo Elite",
+    locale: "es_ES",
     type: "website",
+    images: [
+      {
+        url: "/LOGO.png",
+        width: 1200,
+        height: 630,
+        alt: "Hacoo Elite Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HacooElite — Enlaces y Cupones Hacoo",
+    description: "Accede a los mejores links de Hacoo y ahorra con nuestros cupones exclusivos.",
     images: ["/LOGO.png"],
   },
   verification: {
     google: "2jHpnfOH-dy0mc6c6VkefIaXKW1YkmFfvC5kVyKylMs",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Hacoo Elite",
+  "url": "https://hacooelite.com",
+  "description": "Plataforma líder en enlaces y cupones para Hacoo.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://hacooelite.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 };
 
 export default function RootLayout({
@@ -53,6 +105,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" data-theme="dark" className={`${inter.variable}`} suppressHydrationWarning={true}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased">
         <AuthProvider>
           <CartProvider>
