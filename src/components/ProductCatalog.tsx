@@ -6,7 +6,7 @@ import ProductCard from "./ProductCard";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { Search, Filter, ChevronDown, ChevronUp, X } from "lucide-react";
-import AdBanner from "./AdBanner";
+
 
 export default function ProductCatalog() {
   const { t } = useLanguage();
@@ -174,12 +174,7 @@ export default function ProductCatalog() {
                   <ProductCard product={product} />
                 </motion.div>
                 
-                {/* Insert ad every 8 products (or 4 on mobile) */}
-                {(index + 1) % 8 === 0 && (
-                  <div className="col-span-full py-4">
-                    <AdBanner />
-                  </div>
-                )}
+
               </div>
             ))}
           </AnimatePresence>
@@ -194,9 +189,7 @@ export default function ProductCatalog() {
         </div>
       )}
       
-      <div className="mt-20">
-        <AdBanner />
-      </div>
+
     </section>
   );
 }

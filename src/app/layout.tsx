@@ -5,12 +5,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileNavbar from "@/components/MobileNavbar";
 import PromoToast from "@/components/PromoToast";
-import AdBanner from "@/components/AdBanner";
 import { AuthProvider } from "@/context/AuthContext";
 import { CartProvider } from "@/context/CartContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Analytics } from "@vercel/analytics/next";
-import SocialBarAd from "@/components/SocialBarAd";
 import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
@@ -65,7 +63,7 @@ export default function RootLayout({
                   <main id="main-content" className="pb-24 md:pb-0">
                     {children}
                   </main>
-                  <AdBanner />
+
                   <Footer />
                   <MobileNavbar />
                   <PromoToast />
@@ -75,7 +73,7 @@ export default function RootLayout({
           </CartProvider>
         </AuthProvider>
         <Analytics />
-        <SocialBarAd />
+
         <CookieConsent />
       </body>
     </html>

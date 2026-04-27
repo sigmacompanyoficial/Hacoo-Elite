@@ -2,7 +2,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import ProductCard from "@/components/ProductCard";
-import AdBanner from "@/components/AdBanner";
+
 import { products } from "@/data/products";
 import { ArrowRight, ShieldCheck, Zap, Send, ShoppingBag } from "lucide-react";
 import Link from "next/link";
@@ -40,7 +40,7 @@ function HomeContent() {
     <div className="home-wrapper">
       {/* 1. HERO SECTION */}
       <HeroSection />
-      <AdBanner />
+
 
       {/* 2. VALUE PROPOSITION SECTION */}
       <section className="section bg-secondary/30">
@@ -95,7 +95,7 @@ function HomeContent() {
         </div>
       </section>
 
-      <AdBanner />
+
 
       {/* 3. FEATURED PRODUCTS PREVIEW */}
       <section className="section">
@@ -155,7 +155,7 @@ function HomeContent() {
         </div>
       </section>
 
-      <AdBanner />
+
 
       {/* Verification Toast */}
       <AnimatePresence>
