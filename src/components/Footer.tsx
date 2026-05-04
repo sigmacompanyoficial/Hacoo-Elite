@@ -16,9 +16,9 @@ export default function Footer() {
           {/* Column 1: Brand */}
           <div className="flex flex-col gap-6">
             <Link href="/" className="flex items-center h-12 w-auto">
-              <img 
-                src="/LOGO.png" 
-                alt="Hacoo Elite Logo" 
+              <img
+                src="/LOGO.png"
+                alt="Hacoo Elite Logo"
                 className="h-full w-auto object-contain"
               />
             </Link>

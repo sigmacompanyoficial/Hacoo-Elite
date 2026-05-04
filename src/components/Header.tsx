@@ -72,12 +72,12 @@ export default function Header() {
           </nav>
 
           {/* Right: Actions */}
-          <div className="flex items-center gap-2 sm:gap-4">
+          <div className="flex items-center gap-4 sm:gap-6">
             {/* Admin Link (Only for admins) */}
             {profile?.role === "admin" && (
               <Link 
                 href="/admin" 
-                className="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-blue-600/10 text-blue-500 border border-blue-500/20 rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all shadow-lg shadow-blue-600/5"
+                className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 bg-blue-600/10 text-blue-500 border border-blue-500/20 rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all"
               >
                 <ShieldCheck size={14} />
                 Admin
@@ -86,16 +86,16 @@ export default function Header() {
 
             {/* Configuration Button */}
             <div className="relative group">
-              <button className="p-2 text-zinc-400 hover:text-white transition-colors rounded-full hover:bg-zinc-900">
-                <Settings size={22} className="group-hover:rotate-90 transition-transform duration-500" />
+              <button className="p-2 text-zinc-400 hover:text-white transition-colors rounded-full hover:bg-zinc-900/50">
+                <Settings size={20} className="group-hover:rotate-45 transition-transform duration-500" />
               </button>
 
               {/* Config Dropdown */}
-              <div className="absolute right-0 mt-2 w-48 bg-[#111111] border border-zinc-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-[1100] p-2">
-                <div className="text-[10px] font-black uppercase text-zinc-500 px-3 py-2 tracking-widest">Configuración</div>
-                <div className="flex flex-col gap-1">
-                  <div className="px-3 py-2 text-xs font-bold text-zinc-300">Idioma</div>
-                  <div className="grid grid-cols-5 gap-1 p-1">
+              <div className="absolute right-0 mt-3 w-52 bg-[#0d0d0d] border border-zinc-800/50 rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-[1100] p-3 backdrop-blur-xl">
+                <div className="text-[10px] font-bold uppercase text-zinc-500 px-3 py-2 tracking-widest">Preferencia de Sistema</div>
+                <div className="flex flex-col gap-1 mt-1">
+                  <div className="px-3 py-1.5 text-xs font-semibold text-zinc-400">Idioma Regional</div>
+                  <div className="grid grid-cols-5 gap-1.5 p-1">
                     {[
                       { code: "es", flag: "🇪🇸" },
                       { code: "en", flag: "🇺🇸" },
@@ -106,7 +106,7 @@ export default function Header() {
                       <button
                         key={lang.code}
                         onClick={() => setLanguage(lang.code as any)}
-                        className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm hover:bg-zinc-800 transition-colors ${language === lang.code ? 'bg-blue-600/20 border border-blue-500/50' : ''}`}
+                        className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm hover:bg-zinc-800 transition-all ${language === lang.code ? 'bg-blue-600/20 border border-blue-500/40 text-white' : 'text-zinc-500'}`}
                         title={lang.code.toUpperCase()}
                       >
                         {lang.flag}
@@ -119,9 +119,9 @@ export default function Header() {
 
             {/* Cart Icon */}
             <Link href="/cart" className="relative p-2 text-zinc-400 hover:text-white transition-colors group">
-              <ShoppingBag size={22} className="group-hover:scale-110 transition-transform" />
+              <ShoppingBag size={20} className="group-hover:scale-110 transition-transform" />
               {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-[9px] font-black w-4.5 h-4.5 min-w-[18px] min-h-[18px] rounded-full flex items-center justify-center shadow-lg border-2 border-[#080808] transform scale-100 group-hover:scale-110 transition-transform">
+                <span className="absolute -top-0.5 -right-0.5 bg-blue-600 text-white text-[9px] font-bold w-4.5 h-4.5 min-w-[18px] min-h-[18px] rounded-full flex items-center justify-center border-2 border-[#080808] shadow-lg">
                   {cartCount}
                 </span>
               )}
@@ -132,36 +132,36 @@ export default function Header() {
               {user ? (
                 <Link href="/profile" className="flex items-center gap-4 group cursor-pointer">
                   <div className="flex flex-col items-end">
-                    <span className="text-white text-xs font-bold group-hover:text-blue-500 transition-colors">{profile?.displayName || "Usuario"}</span>
+                    <span className="text-zinc-200 text-xs font-semibold group-hover:text-blue-500 transition-colors">{profile?.displayName || "Mi Cuenta"}</span>
                     <button
                       onClick={(e) => { e.preventDefault(); logout(); }}
-                      className="text-zinc-500 text-[10px] uppercase font-black tracking-widest hover:text-red-500 transition-colors"
+                      className="text-zinc-500 text-[9px] uppercase font-bold tracking-widest hover:text-red-500 transition-colors mt-0.5"
                     >
                       Cerrar sesión
                     </button>
                   </div>
-                  <div className="w-10 h-10 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden group-hover:border-blue-500/50 transition-all shadow-xl">
+                  <div className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-500 overflow-hidden group-hover:border-blue-500/40 transition-all shadow-inner">
                     {profile?.photoURL ? (
                       <img src={profile.photoURL} alt={profile.displayName || ""} className="w-full h-full object-cover" />
                     ) : (
-                      <User size={20} />
+                      <User size={18} />
                     )}
                   </div>
                 </Link>
               ) : (
-                <Link href="/auth" className="bg-zinc-900 text-white px-4 py-2 rounded-lg text-sm font-bold border border-zinc-800 hover:bg-zinc-800 transition-all">
-                  Iniciar Sesión
+                <Link href="/auth" className="px-5 py-2.5 bg-white text-black rounded-xl text-xs font-bold hover:bg-zinc-200 transition-all shadow-lg shadow-white/5">
+                  Acceso
                 </Link>
               )}
             </div>
 
             {/* Mobile Menu Toggle */}
             <button
-              className="mobile-menu-toggle md:hidden text-white p-1"
+              className="mobile-menu-toggle md:hidden text-white p-1 ml-1"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle Menu"
             >
-              {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
           </div>
         </div>
@@ -174,11 +174,11 @@ export default function Header() {
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[2000] flex flex-col p-8 bg-[#080808] overflow-y-auto"
+            transition={{ type: "spring", damping: 30, stiffness: 300 }}
+            className="fixed inset-0 z-[2000] flex flex-col p-6 bg-[#080808] overflow-y-auto"
           >
-            <div className="flex justify-between items-center mb-12">
-              <Link href="/" className="logo-link flex items-center h-10 py-1" onClick={() => setIsMenuOpen(false)}>
+            <div className="flex justify-between items-center mb-16">
+              <Link href="/" className="h-8" onClick={() => setIsMenuOpen(false)}>
                 <img
                   src="/LOGO.png"
                   alt="Hacoo Elite Logo"
@@ -187,23 +187,23 @@ export default function Header() {
               </Link>
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="w-12 h-12 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white hover:bg-zinc-800 transition-colors"
+                className="w-12 h-12 rounded-2xl bg-zinc-900 border border-zinc-800/50 flex items-center justify-center text-white"
               >
                 <X size={24} />
               </button>
             </div>
 
-            <nav className="flex flex-col gap-8 mb-12">
+            <nav className="flex flex-col gap-6 mb-12">
               {navLinks.map((link, idx) => (
                 <motion.div
                   key={link.href}
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 + idx * 0.1 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.05 + idx * 0.05 }}
                 >
                   <Link
                     href={link.href}
-                    className={`text-5xl font-black italic uppercase tracking-tighter transition-colors ${pathname === link.href ? "text-blue-500" : "text-white hover:text-blue-400"}`}
+                    className={`text-4xl font-bold uppercase tracking-tight transition-colors ${pathname === link.href ? "text-blue-500" : "text-zinc-200"}`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}
@@ -211,34 +211,34 @@ export default function Header() {
                 </motion.div>
               ))}
               <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 + navLinks.length * 0.1 }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.15 }}
               >
                 <a
                   href="https://t.me/HacooLinksElite"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-5xl font-black italic uppercase tracking-tighter text-white flex items-center gap-4 hover:text-blue-400 transition-colors"
+                  className="text-4xl font-bold uppercase tracking-tight text-zinc-200 flex items-center gap-4"
                 >
                   Telegram
-                  <Send size={32} className="text-blue-500" />
+                  <Send size={24} className="text-blue-500" />
                 </a>
               </motion.div>
 
               {profile?.role === "admin" && (
                 <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 + (navLinks.length + 1) * 0.1 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
                 >
                   <Link
                     href="/admin"
-                    className="text-5xl font-black italic uppercase tracking-tighter text-blue-500 flex items-center gap-4 hover:text-blue-400 transition-colors"
+                    className="text-4xl font-bold uppercase tracking-tight text-blue-500 flex items-center gap-4"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Admin
-                    <ShieldCheck size={32} />
+                    Admin Panel
+                    <ShieldCheck size={28} />
                   </Link>
                 </motion.div>
               )}
@@ -247,27 +247,27 @@ export default function Header() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="mt-auto"
+              transition={{ delay: 0.3 }}
+              className="mt-auto pt-10"
             >
               {user ? (
                 <Link 
                   href="/profile" 
-                  className="flex items-center gap-4 p-5 bg-zinc-900 rounded-2xl border border-zinc-800 group active:scale-[0.98] transition-all"
+                  className="flex items-center gap-4 p-5 bg-zinc-900/50 rounded-2xl border border-white/[0.03] group active:scale-[0.98] transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <div className="w-14 h-14 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-400 overflow-hidden group-hover:border-blue-500/50 transition-all">
+                  <div className="w-12 h-12 rounded-full bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-500 overflow-hidden">
                     {profile?.photoURL ? (
                       <img src={profile.photoURL} alt={profile.displayName || ""} className="w-full h-full object-cover" />
                     ) : (
-                      <User size={28} />
+                      <User size={24} />
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-white font-black uppercase text-sm tracking-tight group-hover:text-blue-500 transition-colors">{profile?.displayName || "Usuario"}</span>
+                    <span className="text-white font-bold text-sm tracking-tight">{profile?.displayName || "Mi Perfil"}</span>
                     <button
                       onClick={(e) => { e.preventDefault(); logout(); setIsMenuOpen(false); }}
-                      className="text-red-500 text-[10px] font-black uppercase tracking-[0.2em] text-left mt-1"
+                      className="text-red-500 text-[10px] font-bold uppercase tracking-widest text-left mt-0.5"
                     >
                       Cerrar sesión
                     </button>
@@ -276,10 +276,10 @@ export default function Header() {
               ) : (
                 <Link
                   href="/auth"
-                  className="w-full bg-blue-600 text-white py-6 rounded-2xl font-black text-xl flex items-center justify-center gap-4 shadow-2xl shadow-blue-600/30 active:scale-[0.98] transition-all"
+                  className="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-xl shadow-blue-600/10 active:scale-[0.98] transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <User size={24} />
+                  <User size={22} />
                   INICIAR SESIÓN
                 </Link>
               )}
