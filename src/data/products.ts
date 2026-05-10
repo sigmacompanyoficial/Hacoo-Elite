@@ -1243,14 +1243,14 @@ export const products: Product[] = [
     "description": "Camiseta Acne Studios de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 19,
     "originalPrice": 48,
-    "image": "/images/products/new/camiseta-acne-studios-new-81/1.jpg",
+    "image": "/images/products/camiseta-acne-studios-new-81/1.jpg",
     "category": "Camisetas",
     "brand": "Acne Studios",
     "affiliateUrl": "https://c.onlyaff.app/87VEiM",
     "isExclusive": false,
     "rating": 5.0,
     "reviews": 168,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "82",
@@ -1259,14 +1259,14 @@ export const products: Product[] = [
     "description": "Chandal Liverpool de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 36,
     "originalPrice": 90,
-    "image": "/images/products/new/chandal-liverpool-new-82/1.jpg",
+    "image": "/images/products/chandal-liverpool-new-82/1.jpg",
     "category": "Moda",
     "brand": "Liverpool",
     "affiliateUrl": "https://c.onlyaff.app/87VJ3H",
     "isExclusive": false,
     "rating": 4.8,
     "reviews": 189,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "83",
@@ -1275,14 +1275,14 @@ export const products: Product[] = [
     "description": "Zapatillas Yeezy de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 30,
     "originalPrice": 75,
-    "image": "/images/products/new/zapatillas-yeezy-new-83/1.jpg",
+    "image": "/images/products/zapatillas-yeezy-new-83/1.jpg",
     "category": "Calzado",
     "brand": "Yeezy",
     "affiliateUrl": "https://c.onlyaff.app/88HMiA",
     "isExclusive": true,
     "rating": 4.4,
     "reviews": 129,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "84",
@@ -1291,14 +1291,14 @@ export const products: Product[] = [
     "description": "Numeris de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 33,
     "originalPrice": 83,
-    "image": "/images/products/new/numeris-new-84/1.jpg",
+    "image": "/images/products/numeris-new-84/1.jpg",
     "category": "Moda",
     "brand": "Numeris",
     "affiliateUrl": "https://c.onlyaff.app/88Vkv4",
     "isExclusive": false,
     "rating": 5.0,
     "reviews": 160,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "85",
@@ -1307,14 +1307,14 @@ export const products: Product[] = [
     "description": "Zapatillas Saucony Pro Grid Omni 9 de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 34,
     "originalPrice": 85,
-    "image": "/images/products/new/zapatillas-saucony-pro-grid-omni-9-new-85/1.jpg",
+    "image": "/images/products/zapatillas-saucony-pro-grid-omni-9-new-85/1.jpg",
     "category": "Calzado",
     "brand": "Saucony",
     "affiliateUrl": "https://c.onlyaff.app/88Vnwn",
     "isExclusive": true,
     "rating": 4.9,
     "reviews": 56,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "86",
@@ -1323,14 +1323,14 @@ export const products: Product[] = [
     "description": "Sudadera Zadig de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 20,
     "originalPrice": 50,
-    "image": "/images/products/new/sudadera-zadig-new-86/1.jpg",
+    "image": "/images/products/sudadera-zadig-new-86/1.jpg",
     "category": "Moda",
     "brand": "Zadig",
     "affiliateUrl": "https://c.onlyaff.app/896c0V",
     "isExclusive": true,
     "rating": 4.4,
     "reviews": 126,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "87",
@@ -1339,14 +1339,14 @@ export const products: Product[] = [
     "description": "Camiseta Moncler de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 10,
     "originalPrice": 25,
-    "image": "/images/products/new/camiseta-moncler-new-87/1.jpg",
+    "image": "/images/products/camiseta-moncler-new-87/1.jpg",
     "category": "Camisetas",
     "brand": "Moncler",
     "affiliateUrl": "https://c.onlyaff.app/89AcCe",
     "isExclusive": false,
     "rating": 4.1,
     "reviews": 40,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "88",
@@ -1355,14 +1355,14 @@ export const products: Product[] = [
     "description": "Camiseta Espa├▒a Mundial 2026 de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 11,
     "originalPrice": 28,
-    "image": "/images/products/new/camiseta-espaa-mundial-2026-new-88/1.jpg",
+    "image": "/images/products/camiseta-espaa-mundial-2026-new-88/1.jpg",
     "category": "Camisetas",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/89Ad5E",
     "isExclusive": false,
     "rating": 4.7,
     "reviews": 181,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "89",
@@ -1371,14 +1371,14 @@ export const products: Product[] = [
     "description": "Camiseta Trapstar de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-trapstar-new-89/1.jpg",
+    "image": "/images/products/camiseta-trapstar-new-89/1.jpg",
     "category": "Camisetas",
     "brand": "Trapstar",
     "affiliateUrl": "https://c.onlyaff.app/89Ag5n",
     "isExclusive": true,
     "rating": 5.0,
     "reviews": 16,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "90",
@@ -1387,14 +1387,14 @@ export const products: Product[] = [
     "description": "Camiseta Stussy de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-stussy-new-90/1.jpg",
+    "image": "/images/products/camiseta-stussy-new-90/1.jpg",
     "category": "Camisetas",
     "brand": "Stussy",
     "affiliateUrl": "https://c.onlyaff.app/89AhD9",
     "isExclusive": false,
     "rating": 4.7,
     "reviews": 107,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "91",
@@ -1403,14 +1403,14 @@ export const products: Product[] = [
     "description": "Camiseta Stussy de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-stussy-new-91/1.jpg",
+    "image": "/images/products/camiseta-stussy-new-91/1.jpg",
     "category": "Camisetas",
     "brand": "Stussy",
     "affiliateUrl": "https://c.onlyaff.app/89AkO4",
     "isExclusive": false,
     "rating": 4.4,
     "reviews": 84,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "92",
@@ -1419,14 +1419,14 @@ export const products: Product[] = [
     "description": "Camiseta Essentials de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-essentials-new-92/1.jpg",
+    "image": "/images/products/camiseta-essentials-new-92/1.jpg",
     "category": "Camisetas",
     "brand": "Essentials",
     "affiliateUrl": "https://c.onlyaff.app/89AnsL",
     "isExclusive": true,
     "rating": 5.0,
     "reviews": 28,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "93",
@@ -1435,14 +1435,14 @@ export const products: Product[] = [
     "description": "Pantalon Essentials de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 26,
     "originalPrice": 65,
-    "image": "/images/products/new/pantalon-essentials-new-93/1.jpg",
+    "image": "/images/products/pantalon-essentials-new-93/1.jpg",
     "category": "Moda",
     "brand": "Essentials",
     "affiliateUrl": "https://c.onlyaff.app/8aObvB",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 96,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "94",
@@ -1451,14 +1451,14 @@ export const products: Product[] = [
     "description": "Cartera Chrome Hearts de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 5,
     "originalPrice": 13,
-    "image": "/images/products/new/cartera-chrome-hearts-new-94/1.jpg",
+    "image": "/images/products/cartera-chrome-hearts-new-94/1.jpg",
     "category": "Accesorios",
     "brand": "Chrome Hearts",
     "affiliateUrl": "https://c.onlyaff.app/8bfYRD",
     "isExclusive": true,
     "rating": 4.1,
     "reviews": 133,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "95",
@@ -1467,14 +1467,14 @@ export const products: Product[] = [
     "description": "Calzoncillos Under Armour de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 13,
     "originalPrice": 33,
-    "image": "/images/products/new/calzoncillos-under-armour-new-95/1.jpg",
+    "image": "/images/products/calzoncillos-under-armour-new-95/1.jpg",
     "category": "Moda",
     "brand": "Under Armour",
     "affiliateUrl": "https://c.onlyaff.app/8bfZDe",
     "isExclusive": true,
     "rating": 4.4,
     "reviews": 200,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "96",
@@ -1483,14 +1483,14 @@ export const products: Product[] = [
     "description": "Pantalon Ralph Lauren de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 10,
     "originalPrice": 25,
-    "image": "/images/products/new/pantalon-ralph-lauren-new-96/1.jpg",
+    "image": "/images/products/pantalon-ralph-lauren-new-96/1.jpg",
     "category": "Moda",
     "brand": "Ralph Lauren",
     "affiliateUrl": "https://c.onlyaff.app/8bg1g9",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 202,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "97",
@@ -1499,14 +1499,14 @@ export const products: Product[] = [
     "description": "Conjunto Moncler de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 12,
     "originalPrice": 30,
-    "image": "/images/products/new/conjunto-moncler-new-97/1.jpg",
+    "image": "/images/products/conjunto-moncler-new-97/1.jpg",
     "category": "Moda",
     "brand": "Moncler",
     "affiliateUrl": "https://c.onlyaff.app/8bg1Q1",
     "isExclusive": true,
     "rating": 4.8,
     "reviews": 21,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "98",
@@ -1515,14 +1515,14 @@ export const products: Product[] = [
     "description": "Camiseta Rhude de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 15,
     "originalPrice": 38,
-    "image": "/images/products/new/camiseta-rhude-new-98/1.jpg",
+    "image": "/images/products/camiseta-rhude-new-98/1.jpg",
     "category": "Camisetas",
     "brand": "Rhude",
     "affiliateUrl": "https://c.onlyaff.app/8bg2le",
     "isExclusive": true,
     "rating": 4.8,
     "reviews": 162,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "99",
@@ -1531,14 +1531,14 @@ export const products: Product[] = [
     "description": "Sudadera EME Studios de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 39,
     "originalPrice": 98,
-    "image": "/images/products/new/sudadera-eme-studios-new-99/1.jpg",
+    "image": "/images/products/sudadera-eme-studios-new-99/1.jpg",
     "category": "Moda",
     "brand": "EME Studios",
     "affiliateUrl": "https://c.onlyaff.app/8bg3lO",
     "isExclusive": true,
     "rating": 4.1,
     "reviews": 128,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "100",
@@ -1547,14 +1547,14 @@ export const products: Product[] = [
     "description": "Asics Gel Nyc de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 25,
     "originalPrice": 63,
-    "image": "/images/products/new/asics-gel-nyc-new-100/1.jpg",
+    "image": "/images/products/asics-gel-nyc-new-100/1.jpg",
     "category": "Calzado",
     "brand": "Asics",
     "affiliateUrl": "https://c.onlyaff.app/8bg42w",
     "isExclusive": true,
     "rating": 4.7,
     "reviews": 151,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "101",
@@ -1563,14 +1563,14 @@ export const products: Product[] = [
     "description": "Zapatillas On Cloud de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 30,
     "originalPrice": 75,
-    "image": "/images/products/new/zapatillas-on-cloud-new-101/1.jpg",
+    "image": "/images/products/zapatillas-on-cloud-new-101/1.jpg",
     "category": "Calzado",
     "brand": "On Cloud",
     "affiliateUrl": "https://c.onlyaff.app/8bg4GY",
     "isExclusive": false,
     "rating": 4.2,
     "reviews": 194,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "102",
@@ -1579,14 +1579,14 @@ export const products: Product[] = [
     "description": "Asics Gel Kayano 14 de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 20,
     "originalPrice": 50,
-    "image": "/images/products/new/asics-gel-kayano-14-new-102/1.jpg",
+    "image": "/images/products/asics-gel-kayano-14-new-102/1.jpg",
     "category": "Calzado",
     "brand": "Asics",
     "affiliateUrl": "https://c.onlyaff.app/8bg6kB",
     "isExclusive": false,
     "rating": 4.6,
     "reviews": 54,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "103",
@@ -1595,14 +1595,14 @@ export const products: Product[] = [
     "description": "Yeezy Foam de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 11,
     "originalPrice": 28,
-    "image": "/images/products/new/yeezy-foam-new-103/1.jpg",
+    "image": "/images/products/yeezy-foam-new-103/1.jpg",
     "category": "Calzado",
     "brand": "Yeezy",
     "affiliateUrl": "https://c.onlyaff.app/8bg8D1",
     "isExclusive": false,
     "rating": 4.9,
     "reviews": 163,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "104",
@@ -1611,14 +1611,14 @@ export const products: Product[] = [
     "description": "Alexander McQueen de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 25,
     "originalPrice": 63,
-    "image": "/images/products/new/alexander-mcqueen-new-104/1.jpg",
+    "image": "/images/products/alexander-mcqueen-new-104/1.jpg",
     "category": "Moda",
     "brand": "Alexander McQueen",
     "affiliateUrl": "https://c.onlyaff.app/8bg9TN",
     "isExclusive": false,
     "rating": 4.9,
     "reviews": 73,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "105",
@@ -1627,14 +1627,14 @@ export const products: Product[] = [
     "description": "Camiseta Larga Chrome Hearts de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 13,
     "originalPrice": 33,
-    "image": "/images/products/new/camiseta-larga-chrome-hearts-new-105/1.jpg",
+    "image": "/images/products/camiseta-larga-chrome-hearts-new-105/1.jpg",
     "category": "Camisetas",
     "brand": "Chrome Hearts",
     "affiliateUrl": "https://c.onlyaff.app/8bgaZg",
     "isExclusive": true,
     "rating": 4.0,
     "reviews": 45,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "106",
@@ -1643,14 +1643,14 @@ export const products: Product[] = [
     "description": "Camiseta Acne Studios de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 17,
     "originalPrice": 43,
-    "image": "/images/products/new/camiseta-acne-studios-new-106/1.jpg",
+    "image": "/images/products/camiseta-acne-studios-new-106/1.jpg",
     "category": "Camisetas",
     "brand": "Acne Studios",
     "affiliateUrl": "https://c.onlyaff.app/8cX7rm",
     "isExclusive": false,
     "rating": 4.2,
     "reviews": 102,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "107",
@@ -1659,14 +1659,14 @@ export const products: Product[] = [
     "description": "Camiseta Trapstar de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 17,
     "originalPrice": 43,
-    "image": "/images/products/new/camiseta-trapstar-new-107/1.jpg",
+    "image": "/images/products/camiseta-trapstar-new-107/1.jpg",
     "category": "Camisetas",
     "brand": "Trapstar",
     "affiliateUrl": "https://c.onlyaff.app/8dGbrY",
     "isExclusive": true,
     "rating": 4.6,
     "reviews": 86,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "108",
@@ -1675,14 +1675,14 @@ export const products: Product[] = [
     "description": "Pantalon Stone Island de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 20,
     "originalPrice": 50,
-    "image": "/images/products/new/pantalon-stone-island-new-108/1.jpg",
+    "image": "/images/products/pantalon-stone-island-new-108/1.jpg",
     "category": "Moda",
     "brand": "Stone Island",
     "affiliateUrl": "https://c.onlyaff.app/8dJ8vc",
     "isExclusive": true,
     "rating": 4.8,
     "reviews": 114,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "109",
@@ -1691,14 +1691,14 @@ export const products: Product[] = [
     "description": "Zapatillas Lanvin Curb de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 34,
     "originalPrice": 85,
-    "image": "/images/products/new/zapatillas-lanvin-curb-new-109/1.jpg",
+    "image": "/images/products/zapatillas-lanvin-curb-new-109/1.jpg",
     "category": "Calzado",
     "brand": "Lanvin",
     "affiliateUrl": "https://c.onlyaff.app/8etwbb",
     "isExclusive": true,
     "rating": 4.0,
     "reviews": 130,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "110",
@@ -1707,14 +1707,14 @@ export const products: Product[] = [
     "description": "Pantalon Denim Tears de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 11,
     "originalPrice": 28,
-    "image": "/images/products/new/pantalon-denim-tears-new-110/1.jpg",
+    "image": "/images/products/pantalon-denim-tears-new-110/1.jpg",
     "category": "Moda",
     "brand": "Denim Tears",
     "affiliateUrl": "https://c.onlyaff.app/8f2gKf",
     "isExclusive": false,
     "rating": 4.2,
     "reviews": 154,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "111",
@@ -1723,14 +1723,14 @@ export const products: Product[] = [
     "description": "Camiseta Gallery Dept de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 6,
     "originalPrice": 15,
-    "image": "/images/products/new/camiseta-gallery-dept-new-111/1.jpg",
+    "image": "/images/products/camiseta-gallery-dept-new-111/1.jpg",
     "category": "Camisetas",
     "brand": "Gallery Dept",
     "affiliateUrl": "https://c.onlyaff.app/8f2qpT",
     "isExclusive": true,
     "rating": 4.3,
     "reviews": 128,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "112",
@@ -1739,14 +1739,14 @@ export const products: Product[] = [
     "description": "Camiseta Carhartt de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 5,
     "originalPrice": 13,
-    "image": "/images/products/new/camiseta-carhartt-new-112/1.jpg",
+    "image": "/images/products/camiseta-carhartt-new-112/1.jpg",
     "category": "Camisetas",
     "brand": "Carhartt",
     "affiliateUrl": "https://c.onlyaff.app/8f2wMt",
     "isExclusive": true,
     "rating": 5.0,
     "reviews": 130,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "113",
@@ -1755,14 +1755,14 @@ export const products: Product[] = [
     "description": "Camiseta Off White de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 9,
     "originalPrice": 23,
-    "image": "/images/products/new/camiseta-off-white-new-113/1.jpg",
+    "image": "/images/products/camiseta-off-white-new-113/1.jpg",
     "category": "Camisetas",
     "brand": "Off White",
     "affiliateUrl": "https://c.onlyaff.app/8f2AQv",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 53,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "114",
@@ -1771,14 +1771,14 @@ export const products: Product[] = [
     "description": "Gafas Ray-Ban de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 7,
     "originalPrice": 18,
-    "image": "/images/products/new/gafas-ray-ban-new-114/1.jpg",
+    "image": "/images/products/gafas-ray-ban-new-114/1.jpg",
     "category": "Accesorios",
     "brand": "Ray-Ban",
     "affiliateUrl": "https://c.onlyaff.app/8f5Roj",
     "isExclusive": false,
     "rating": 4.8,
     "reviews": 146,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "115",
@@ -1787,14 +1787,14 @@ export const products: Product[] = [
     "description": "Numeris de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 38,
     "originalPrice": 95,
-    "image": "/images/products/new/numeris-new-115/1.jpg",
+    "image": "/images/products/numeris-new-115/1.jpg",
     "category": "Moda",
     "brand": "Numeris",
     "affiliateUrl": "https://c.onlyaff.app/8fTSwi",
     "isExclusive": false,
     "rating": 4.3,
     "reviews": 14,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "116",
@@ -1803,14 +1803,14 @@ export const products: Product[] = [
     "description": "Saucony pro grid omni 9 de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 32,
     "originalPrice": 80,
-    "image": "/images/products/new/saucony-pro-grid-omni-9-new-116/1.jpg",
+    "image": "/images/products/saucony-pro-grid-omni-9-new-116/1.jpg",
     "category": "Moda",
     "brand": "Saucony",
     "affiliateUrl": "https://c.onlyaff.app/8fTUjF",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 99,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "117",
@@ -1819,14 +1819,14 @@ export const products: Product[] = [
     "description": "Golen Goose Ball-Star de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 29,
     "originalPrice": 73,
-    "image": "/images/products/new/golen-goose-ball-star-new-117/1.jpg",
+    "image": "/images/products/golen-goose-ball-star-new-117/1.jpg",
     "category": "Calzado",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/8fTXmh",
     "isExclusive": false,
     "rating": 5.0,
     "reviews": 150,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "118",
@@ -1835,14 +1835,14 @@ export const products: Product[] = [
     "description": "Premiata de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 40,
     "originalPrice": 100,
-    "image": "/images/products/new/premiata-new-118/1.jpg",
+    "image": "/images/products/premiata-new-118/1.jpg",
     "category": "Calzado",
     "brand": "Premiata",
     "affiliateUrl": "https://c.onlyaff.app/8fU0AN",
     "isExclusive": true,
     "rating": 4.2,
     "reviews": 118,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "119",
@@ -1851,14 +1851,14 @@ export const products: Product[] = [
     "description": "Off-White out of office de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 30,
     "originalPrice": 75,
-    "image": "/images/products/new/off-white-out-of-office-new-119/1.jpg",
+    "image": "/images/products/off-white-out-of-office-new-119/1.jpg",
     "category": "Moda",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/8fU2W8",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 56,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "120",
@@ -1867,14 +1867,14 @@ export const products: Product[] = [
     "description": "Camiseta Chrome Hearts de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-chrome-hearts-new-120/1.jpg",
+    "image": "/images/products/camiseta-chrome-hearts-new-120/1.jpg",
     "category": "Camisetas",
     "brand": "Chrome Hearts",
     "affiliateUrl": "https://c.onlyaff.app/8gQIRt",
     "isExclusive": false,
     "rating": 4.3,
     "reviews": 68,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "121",
@@ -1883,14 +1883,14 @@ export const products: Product[] = [
     "description": "Asics Gel Nyc de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 30,
     "originalPrice": 75,
-    "image": "/images/products/new/asics-gel-nyc-new-121/1.jpg",
+    "image": "/images/products/asics-gel-nyc-new-121/1.jpg",
     "category": "Calzado",
     "brand": "Asics",
     "affiliateUrl": "https://c.onlyaff.app/8gRaej",
     "isExclusive": true,
     "rating": 4.6,
     "reviews": 119,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "122",
@@ -1899,14 +1899,14 @@ export const products: Product[] = [
     "description": "Asics Gel Kayano 14 de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 25,
     "originalPrice": 63,
-    "image": "/images/products/new/asics-gel-kayano-14-new-122/1.jpg",
+    "image": "/images/products/asics-gel-kayano-14-new-122/1.jpg",
     "category": "Calzado",
     "brand": "Asics",
     "affiliateUrl": "https://c.onlyaff.app/8gRGHW",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 127,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "123",
@@ -1915,14 +1915,14 @@ export const products: Product[] = [
     "description": "Sudadera Stone Island de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 18,
     "originalPrice": 45,
-    "image": "/images/products/new/sudadera-stone-island-new-123/1.jpg",
+    "image": "/images/products/sudadera-stone-island-new-123/1.jpg",
     "category": "Moda",
     "brand": "Stone Island",
     "affiliateUrl": "https://c.onlyaff.app/8gSpWw",
     "isExclusive": false,
     "rating": 4.3,
     "reviews": 162,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "124",
@@ -1931,14 +1931,14 @@ export const products: Product[] = [
     "description": "Adidas Samba de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 19,
     "originalPrice": 48,
-    "image": "/images/products/new/adidas-samba-new-124/1.jpg",
+    "image": "/images/products/adidas-samba-new-124/1.jpg",
     "category": "Calzado",
     "brand": "Adidas",
     "affiliateUrl": "https://c.onlyaff.app/8gSSAQ",
     "isExclusive": false,
     "rating": 4.2,
     "reviews": 63,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "125",
@@ -1947,14 +1947,14 @@ export const products: Product[] = [
     "description": "Zapatillas Onitsuka Tiger de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 22,
     "originalPrice": 55,
-    "image": "/images/products/new/zapatillas-onitsuka-tiger-new-125/1.jpg",
+    "image": "/images/products/zapatillas-onitsuka-tiger-new-125/1.jpg",
     "category": "Calzado",
     "brand": "Onitsuka Tiger",
     "affiliateUrl": "https://c.onlyaff.app/8gSYiM",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 166,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "126",
@@ -1963,14 +1963,14 @@ export const products: Product[] = [
     "description": "Zapatillas Alexander McQueen de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 26,
     "originalPrice": 65,
-    "image": "/images/products/new/zapatillas-alexander-mcqueen-new-126/1.jpg",
+    "image": "/images/products/zapatillas-alexander-mcqueen-new-126/1.jpg",
     "category": "Calzado",
     "brand": "Alexander McQueen",
     "affiliateUrl": "https://c.onlyaff.app/8hjb0I",
     "isExclusive": false,
     "rating": 4.4,
     "reviews": 209,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "127",
@@ -1979,14 +1979,14 @@ export const products: Product[] = [
     "description": "Camiseta Acne Studios de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 24,
     "originalPrice": 60,
-    "image": "/images/products/new/camiseta-acne-studios-new-127/1.jpg",
+    "image": "/images/products/camiseta-acne-studios-new-127/1.jpg",
     "category": "Camisetas",
     "brand": "Acne Studios",
     "affiliateUrl": "https://c.onlyaff.app/PkyqT",
     "isExclusive": true,
     "rating": 4.1,
     "reviews": 179,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "128",
@@ -1995,14 +1995,14 @@ export const products: Product[] = [
     "description": "Cartera Goyard de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 3,
     "originalPrice": 8,
-    "image": "/images/products/new/cartera-goyard-new-128/1.jpg",
+    "image": "/images/products/cartera-goyard-new-128/1.jpg",
     "category": "Accesorios",
     "brand": "Goyard",
     "affiliateUrl": "https://c.onlyaff.app/PkB2e",
     "isExclusive": true,
     "rating": 4.6,
     "reviews": 133,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "129",
@@ -2011,14 +2011,14 @@ export const products: Product[] = [
     "description": "Conjuntos Futbol Mundial Ni├▒os de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 12,
     "originalPrice": 30,
-    "image": "/images/products/new/conjuntos-futbol-mundial-nios-new-129/1.jpg",
+    "image": "/images/products/conjuntos-futbol-mundial-nios-new-129/1.jpg",
     "category": "Moda",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/8hkuKz",
     "isExclusive": true,
     "rating": 4.3,
     "reviews": 157,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "130",
@@ -2027,14 +2027,14 @@ export const products: Product[] = [
     "description": "Camiseta De Compresion Under Armour de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 7,
     "originalPrice": 18,
-    "image": "/images/products/new/camiseta-de-compresion-under-armour-new-130/1.jpg",
+    "image": "/images/products/camiseta-de-compresion-under-armour-new-130/1.jpg",
     "category": "Camisetas",
     "brand": "Under Armour",
     "affiliateUrl": "https://c.onlyaff.app/8hlpv5",
     "isExclusive": true,
     "rating": 4.1,
     "reviews": 62,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "131",
@@ -2043,14 +2043,14 @@ export const products: Product[] = [
     "description": "Camiseta Rhude de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 16,
     "originalPrice": 40,
-    "image": "/images/products/new/camiseta-rhude-new-131/1.jpg",
+    "image": "/images/products/camiseta-rhude-new-131/1.jpg",
     "category": "Camisetas",
     "brand": "Rhude",
     "affiliateUrl": "https://c.onlyaff.app/8hlU64",
     "isExclusive": true,
     "rating": 4.1,
     "reviews": 49,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "132",
@@ -2059,14 +2059,14 @@ export const products: Product[] = [
     "description": "Camiseta Malaga de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 13,
     "originalPrice": 33,
-    "image": "/images/products/new/camiseta-malaga-new-132/1.jpg",
+    "image": "/images/products/camiseta-malaga-new-132/1.jpg",
     "category": "Camisetas",
     "brand": "Malaga",
     "affiliateUrl": "https://c.onlyaff.app/8hmamM",
     "isExclusive": true,
     "rating": 4.8,
     "reviews": 84,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "133",
@@ -2075,14 +2075,14 @@ export const products: Product[] = [
     "description": "Camiseta Represent de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 7,
     "originalPrice": 18,
-    "image": "/images/products/new/camiseta-represent-new-133/1.jpg",
+    "image": "/images/products/camiseta-represent-new-133/1.jpg",
     "category": "Camisetas",
     "brand": "Represent",
     "affiliateUrl": "https://c.onlyaff.app/8hmrvZ",
     "isExclusive": false,
     "rating": 4.3,
     "reviews": 25,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "134",
@@ -2091,14 +2091,14 @@ export const products: Product[] = [
     "description": "Golden Goose Ball-Star de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 47,
     "originalPrice": 118,
-    "image": "/images/products/new/golden-goose-ball-star-new-134/1.jpg",
+    "image": "/images/products/golden-goose-ball-star-new-134/1.jpg",
     "category": "Calzado",
     "brand": "Golden Goose",
     "affiliateUrl": "https://c.onlyaff.app/8hmCPa",
     "isExclusive": false,
     "rating": 4.0,
     "reviews": 130,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "135",
@@ -2107,14 +2107,14 @@ export const products: Product[] = [
     "description": "Camiseta Stussy de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-stussy-new-135/1.jpg",
+    "image": "/images/products/camiseta-stussy-new-135/1.jpg",
     "category": "Camisetas",
     "brand": "Stussy",
     "affiliateUrl": "https://c.onlyaff.app/8hmFii",
     "isExclusive": false,
     "rating": 4.0,
     "reviews": 200,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "136",
@@ -2123,14 +2123,14 @@ export const products: Product[] = [
     "description": "Conjunto Corteiz de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 17,
     "originalPrice": 43,
-    "image": "/images/products/new/conjunto-corteiz-new-136/1.jpg",
+    "image": "/images/products/conjunto-corteiz-new-136/1.jpg",
     "category": "Moda",
     "brand": "Corteiz",
     "affiliateUrl": "https://c.onlyaff.app/8hogYa",
     "isExclusive": false,
     "rating": 4.5,
     "reviews": 150,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "137",
@@ -2139,14 +2139,14 @@ export const products: Product[] = [
     "description": "Camiseta C.P Company de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-cp-company-new-137/1.jpg",
+    "image": "/images/products/camiseta-cp-company-new-137/1.jpg",
     "category": "Camisetas",
     "brand": "C.P Company",
     "affiliateUrl": "https://c.onlyaff.app/8hoozH",
     "isExclusive": true,
     "rating": 4.2,
     "reviews": 53,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "138",
@@ -2155,14 +2155,14 @@ export const products: Product[] = [
     "description": "Saucony Pro Grid Omni 9 de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 35,
     "originalPrice": 88,
-    "image": "/images/products/new/saucony-pro-grid-omni-9-new-138/1.jpg",
+    "image": "/images/products/saucony-pro-grid-omni-9-new-138/1.jpg",
     "category": "Moda",
     "brand": "Saucony",
     "affiliateUrl": "https://c.onlyaff.app/8horAo",
     "isExclusive": false,
     "rating": 4.4,
     "reviews": 183,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "139",
@@ -2171,14 +2171,14 @@ export const products: Product[] = [
     "description": "Camiseta Aime Leon Dore de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 17,
     "originalPrice": 43,
-    "image": "/images/products/new/camiseta-aime-leon-dore-new-139/1.jpg",
+    "image": "/images/products/camiseta-aime-leon-dore-new-139/1.jpg",
     "category": "Camisetas",
     "brand": "Aime Leon Dore",
     "affiliateUrl": "https://c.onlyaff.app/8how17",
     "isExclusive": true,
     "rating": 4.7,
     "reviews": 12,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "140",
@@ -2187,14 +2187,14 @@ export const products: Product[] = [
     "description": "Camiseta Cole Bruxton de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 19,
     "originalPrice": 48,
-    "image": "/images/products/new/camiseta-cole-bruxton-new-140/1.jpg",
+    "image": "/images/products/camiseta-cole-bruxton-new-140/1.jpg",
     "category": "Camisetas",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/8hoBKK",
     "isExclusive": false,
     "rating": 4.8,
     "reviews": 188,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "141",
@@ -2203,14 +2203,14 @@ export const products: Product[] = [
     "description": "On Cloud Tilt de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 24,
     "originalPrice": 60,
-    "image": "/images/products/new/on-cloud-tilt-new-141/1.jpg",
+    "image": "/images/products/on-cloud-tilt-new-141/1.jpg",
     "category": "Calzado",
     "brand": "On Cloud",
     "affiliateUrl": "https://c.onlyaff.app/8hoRWr",
     "isExclusive": false,
     "rating": 4.6,
     "reviews": 104,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "142",
@@ -2219,14 +2219,14 @@ export const products: Product[] = [
     "description": "Sudadera C.P Company de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 17,
     "originalPrice": 43,
-    "image": "/images/products/new/sudadera-cp-company-new-142/1.jpg",
+    "image": "/images/products/sudadera-cp-company-new-142/1.jpg",
     "category": "Moda",
     "brand": "C.P Company",
     "affiliateUrl": "https://c.onlyaff.app/8i3S7i",
     "isExclusive": false,
     "rating": 4.3,
     "reviews": 43,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "143",
@@ -2235,14 +2235,14 @@ export const products: Product[] = [
     "description": "Tirantes Denim Tears de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 15,
     "originalPrice": 38,
-    "image": "/images/products/new/tirantes-denim-tears-new-143/1.jpg",
+    "image": "/images/products/tirantes-denim-tears-new-143/1.jpg",
     "category": "Moda",
     "brand": "Denim Tears",
     "affiliateUrl": "https://c.onlyaff.app/PpbRc",
     "isExclusive": true,
     "rating": 4.9,
     "reviews": 32,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "144",
@@ -2251,14 +2251,14 @@ export const products: Product[] = [
     "description": "Sueter Cole Buxton de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 19,
     "originalPrice": 48,
-    "image": "/images/products/new/sueter-cole-buxton-new-144/1.jpg",
+    "image": "/images/products/sueter-cole-buxton-new-144/1.jpg",
     "category": "Camisetas",
     "brand": "Cole Buxton",
     "affiliateUrl": "https://c.onlyaff.app/8ijJo7",
     "isExclusive": true,
     "rating": 4.6,
     "reviews": 163,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "145",
@@ -2267,14 +2267,14 @@ export const products: Product[] = [
     "description": "Camisetas de Futbol de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 11,
     "originalPrice": 28,
-    "image": "/images/products/new/camisetas-de-futbol-new-145/1.jpg",
+    "image": "/images/products/camisetas-de-futbol-new-145/1.jpg",
     "category": "Camisetas",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/8ikfZN",
     "isExclusive": false,
     "rating": 4.6,
     "reviews": 30,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "146",
@@ -2283,14 +2283,14 @@ export const products: Product[] = [
     "description": "Camiseta Palm Angels de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 8,
     "originalPrice": 20,
-    "image": "/images/products/new/camiseta-palm-angels-new-146/1.jpg",
+    "image": "/images/products/camiseta-palm-angels-new-146/1.jpg",
     "category": "Camisetas",
     "brand": "Palm Angels",
     "affiliateUrl": "https://c.onlyaff.app/8ikPvj",
     "isExclusive": true,
     "rating": 4.7,
     "reviews": 45,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "147",
@@ -2299,14 +2299,14 @@ export const products: Product[] = [
     "description": "Camiseta Fake Gods de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 15,
     "originalPrice": 38,
-    "image": "/images/products/new/camiseta-fake-gods-new-147/1.jpg",
+    "image": "/images/products/camiseta-fake-gods-new-147/1.jpg",
     "category": "Camisetas",
     "brand": "Fake Gods",
     "affiliateUrl": "https://c.onlyaff.app/PqWhP",
     "isExclusive": true,
     "rating": 4.8,
     "reviews": 112,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "148",
@@ -2315,14 +2315,14 @@ export const products: Product[] = [
     "description": "Maison Margiela Gats de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 34,
     "originalPrice": 85,
-    "image": "/images/products/new/maison-margiela-gats-new-148/1.jpg",
+    "image": "/images/products/maison-margiela-gats-new-148/1.jpg",
     "category": "Calzado",
     "brand": "Maison Margiela",
     "affiliateUrl": "https://c.onlyaff.app/8ilCDq",
     "isExclusive": true,
     "rating": 4.5,
     "reviews": 181,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "149",
@@ -2331,14 +2331,14 @@ export const products: Product[] = [
     "description": "Adidas Adizero de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 23,
     "originalPrice": 58,
-    "image": "/images/products/new/adidas-adizero-new-149/1.jpg",
+    "image": "/images/products/adidas-adizero-new-149/1.jpg",
     "category": "Calzado",
     "brand": "Adidas",
     "affiliateUrl": "https://c.onlyaff.app/8ilJsN",
     "isExclusive": true,
     "rating": 4.9,
     "reviews": 96,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "150",
@@ -2347,14 +2347,14 @@ export const products: Product[] = [
     "description": "Off White Out Of Office de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 30,
     "originalPrice": 75,
-    "image": "/images/products/new/off-white-out-of-office-new-150/1.jpg",
+    "image": "/images/products/off-white-out-of-office-new-150/1.jpg",
     "category": "Moda",
     "brand": "Off White",
     "affiliateUrl": "https://c.onlyaff.app/8imxN2",
     "isExclusive": false,
     "rating": 4.9,
     "reviews": 99,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "151",
@@ -2363,14 +2363,14 @@ export const products: Product[] = [
     "description": "Airpods Max de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 34,
     "originalPrice": 85,
-    "image": "/images/products/new/airpods-max-new-151/1.jpg",
+    "image": "/images/products/airpods-max-new-151/1.jpg",
     "category": "Tecnolog├¡a",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/8imBlP",
     "isExclusive": true,
     "rating": 4.7,
     "reviews": 167,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "152",
@@ -2379,14 +2379,14 @@ export const products: Product[] = [
     "description": "Funda Goyard de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 4,
     "originalPrice": 10,
-    "image": "/images/products/new/funda-goyard-new-152/1.jpg",
+    "image": "/images/products/funda-goyard-new-152/1.jpg",
     "category": "Accesorios",
     "brand": "Goyard",
     "affiliateUrl": "https://c.onlyaff.app/8imII9",
     "isExclusive": false,
     "rating": 4.0,
     "reviews": 68,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "153",
@@ -2395,14 +2395,14 @@ export const products: Product[] = [
     "description": "Asics Gel Nyc de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 24,
     "originalPrice": 60,
-    "image": "/images/products/new/asics-gel-nyc-new-153/1.jpg",
+    "image": "/images/products/asics-gel-nyc-new-153/1.jpg",
     "category": "Calzado",
     "brand": "Asics",
     "affiliateUrl": "https://c.onlyaff.app/8imOOi",
     "isExclusive": false,
     "rating": 4.1,
     "reviews": 161,
-    "isNew": true
+    "isNew": false
   },
   {
     "id": "154",
@@ -2411,14 +2411,14 @@ export const products: Product[] = [
     "description": "Camisa Ralph Lauren de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 14,
     "originalPrice": 35,
-    "image": "/images/products/new/camisa-ralph-lauren-new-154/1.jpg",
+    "image": "/images/products/camisa-ralph-lauren-new-154/1.jpg",
     "category": "Moda",
     "brand": "Ralph Lauren",
     "affiliateUrl": "https://c.onlyaff.app/8imWf5",
     "isExclusive": true,
     "rating": 4.4,
     "reviews": 17,
-    "isNew": true
+    "isNew": false
   }, {
     "id": "161",
     "name": "Trendy Interactive Coach Card",
@@ -2426,15 +2426,430 @@ export const products: Product[] = [
     "description": "Trendy Interactive Coach Card de alta calidad. Dise├▒o exclusivo y materiales premium para un estilo inigualable.",
     "price": 20.39,
     "originalPrice": 51,
-    "image": "/images/products/new/trendy-interactive-coach-card-new-161/1.jpg",
+    "image": "/images/products/trendy-interactive-coach-card-new-161/1.jpg",
     "category": "Moda",
     "brand": "Varios",
     "affiliateUrl": "https://c.onlyaff.app/8j8FVz",
     "isExclusive": true,
     "rating": 4.4,
     "reviews": 15,
-    "isNew": true
+    "isNew": false
   }
   ,
-
+  {
+    "id": "162",
+    "name": "Blank Jorts",
+    "slug": "blank-jorts-new-162",
+    "description": "Blank Jorts de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 25,
+    "originalPrice": 63,
+    "image": "/images/products/new/blank-jorts-new-162/1.jpg",
+    "category": "Moda",
+    "brand": "Jorts",
+    "affiliateUrl": "https://c.onlyaff.app/8k0yCc",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "163",
+    "name": "Sudadera Gallery Dept",
+    "slug": "sudadera-gallery-dept-new-163",
+    "description": "Sudadera Gallery Dept de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 13,
+    "originalPrice": 33,
+    "image": "/images/products/new/sudadera-gallery-dept-new-163/1.jpg",
+    "category": "Moda",
+    "brand": "Gallery",
+    "affiliateUrl": "https://c.onlyaff.app/8kfjBA",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "164",
+    "name": "Sudadera Casablanca",
+    "slug": "sudadera-casablanca-new-164",
+    "description": "Sudadera Casablanca de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 14,
+    "originalPrice": 35,
+    "image": "/images/products/new/sudadera-casablanca-new-164/1.jpg",
+    "category": "Moda",
+    "brand": "Casablanca",
+    "affiliateUrl": "https://c.onlyaff.app/8kmvOl",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "165",
+    "name": "Camiseta Ami Paris",
+    "slug": "camiseta-ami-paris-new-165",
+    "description": "Camiseta Ami Paris de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 18,
+    "originalPrice": 45,
+    "image": "/images/products/new/camiseta-ami-paris-new-165/1.jpg",
+    "category": "Camisetas",
+    "brand": "Ami",
+    "affiliateUrl": "https://c.onlyaff.app/8krldh",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "166",
+    "name": "Camiseta Gymshark",
+    "slug": "camiseta-gymshark-new-166",
+    "description": "Camiseta Gymshark de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 8,
+    "originalPrice": 20,
+    "image": "/images/products/new/camiseta-gymshark-new-166/1.jpg",
+    "category": "Camisetas",
+    "brand": "Gymshark",
+    "affiliateUrl": "https://c.onlyaff.app/8krzaX",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "167",
+    "name": "Zapatillas Maison Mihara",
+    "slug": "zapatillas-maison-mihara-new-167",
+    "description": "Zapatillas Maison Mihara de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 35,
+    "originalPrice": 88,
+    "image": "/images/products/new/zapatillas-maison-mihara-new-167/1.jpg",
+    "category": "Calzado",
+    "brand": "Maison",
+    "affiliateUrl": "https://c.onlyaff.app/8kAtPM",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "168",
+    "name": "Camiseta Ralph Lauren",
+    "slug": "camiseta-ralph-lauren-new-168",
+    "description": "Camiseta Ralph Lauren de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 8,
+    "originalPrice": 20,
+    "image": "/images/products/new/camiseta-ralph-lauren-new-168/1.jpg",
+    "category": "Camisetas",
+    "brand": "Ralph",
+    "affiliateUrl": "https://c.onlyaff.app/PEREW",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "169",
+    "name": "Conjunto Under Armour",
+    "slug": "conjunto-under-armour-new-169",
+    "description": "Conjunto Under Armour de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 16,
+    "originalPrice": 40,
+    "image": "/images/products/new/conjunto-under-armour-new-169/1.jpg",
+    "category": "Accesorios",
+    "brand": "Under",
+    "affiliateUrl": "https://c.onlyaff.app/8oqJCl",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "170",
+    "name": "Zapatillas Autry",
+    "slug": "zapatillas-autry-new-170",
+    "description": "Zapatillas Autry de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 52,
+    "originalPrice": 130,
+    "image": "/images/products/new/zapatillas-autry-new-170/1.jpg",
+    "category": "Calzado",
+    "brand": "Autry",
+    "affiliateUrl": "https://c.onlyaff.app/8oqAw0",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "171",
+    "name": "Funda Rimowa",
+    "slug": "funda-rimowa-new-171",
+    "description": "Funda Rimowa de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 17,
+    "originalPrice": 43,
+    "image": "/images/products/new/funda-rimowa-new-171/1.jpg",
+    "category": "Accesorios",
+    "brand": "Rimowa",
+    "affiliateUrl": "https://c.onlyaff.app/8oryLC",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "172",
+    "name": "Camisetas de Futbol",
+    "slug": "camisetas-de-futbol-new-172",
+    "description": "Camisetas de Futbol de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 11,
+    "originalPrice": 28,
+    "image": "/images/products/new/camisetas-de-futbol-new-172/1.jpg",
+    "category": "Camisetas",
+    "brand": "de",
+    "affiliateUrl": "https://c.onlyaff.app/8osHGC",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "173",
+    "name": "Baador Ralph Lauren",
+    "slug": "baador-ralph-lauren-new-173",
+    "description": "Baador Ralph Lauren de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 8,
+    "originalPrice": 20,
+    "image": "/images/products/new/baador-ralph-lauren-new-173/1.jpg",
+    "category": "Accesorios",
+    "brand": "Ralph",
+    "affiliateUrl": "https://c.onlyaff.app/8otlf8",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "174",
+    "name": "Maison Margiela Gats Pintadas",
+    "slug": "maison-margiela-gats-pintadas-new-174",
+    "description": "Maison Margiela Gats Pintadas de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 39,
+    "originalPrice": 98,
+    "image": "/images/products/new/maison-margiela-gats-pintadas-new-174/1.jpg",
+    "category": "Accesorios",
+    "brand": "Margiela",
+    "affiliateUrl": "https://c.onlyaff.app/8oQILX",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "175",
+    "name": "Prada Cups",
+    "slug": "prada-cups-new-175",
+    "description": "Prada Cups de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 38,
+    "originalPrice": 95,
+    "image": "/images/products/new/prada-cups-new-175/1.jpg",
+    "category": "Accesorios",
+    "brand": "Cups",
+    "affiliateUrl": "https://c.onlyaff.app/8oRkZY",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "176",
+    "name": "Zapatillas Ralph Lauren",
+    "slug": "zapatillas-ralph-lauren-new-176",
+    "description": "Zapatillas Ralph Lauren de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 38,
+    "originalPrice": 95,
+    "image": "/images/products/new/zapatillas-ralph-lauren-new-176/1.jpg",
+    "category": "Calzado",
+    "brand": "Ralph",
+    "affiliateUrl": "https://c.onlyaff.app/8oRQ24",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "177",
+    "name": "Camiseta Haiti",
+    "slug": "camiseta-haiti-new-177",
+    "description": "Camiseta Haiti de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 12,
+    "originalPrice": 30,
+    "image": "/images/products/new/camiseta-haiti-new-177/1.jpg",
+    "category": "Camisetas",
+    "brand": "Haiti",
+    "affiliateUrl": "https://c.onlyaff.app/8oS2Ek",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "178",
+    "name": "Camiseta Stone Island",
+    "slug": "camiseta-stone-island-new-178",
+    "description": "Camiseta Stone Island de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 15,
+    "originalPrice": 38,
+    "image": "/images/products/new/camiseta-stone-island-new-178/1.jpg",
+    "category": "Camisetas",
+    "brand": "Stone",
+    "affiliateUrl": "https://c.onlyaff.app/5cWCL",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "179",
+    "name": "Patalon Carhartt",
+    "slug": "patalon-carhartt-new-179",
+    "description": "Patalon Carhartt de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 16,
+    "originalPrice": 40,
+    "image": "/images/products/new/patalon-carhartt-new-179/1.jpg",
+    "category": "Accesorios",
+    "brand": "Carhartt",
+    "affiliateUrl": "https://c.onlyaff.app/8oT8wn",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "180",
+    "name": "Camiseta Moncler",
+    "slug": "camiseta-moncler-new-180",
+    "description": "Camiseta Moncler de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 19,
+    "originalPrice": 48,
+    "image": "/images/products/new/camiseta-moncler-new-180/1.jpg",
+    "category": "Camisetas",
+    "brand": "Moncler",
+    "affiliateUrl": "https://c.onlyaff.app/Q5yDW",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "181",
+    "name": "Cartera Chrome Hearts",
+    "slug": "cartera-chrome-hearts-new-181",
+    "description": "Cartera Chrome Hearts de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 15,
+    "originalPrice": 38,
+    "image": "/images/products/new/cartera-chrome-hearts-new-181/1.jpg",
+    "category": "Accesorios",
+    "brand": "Chrome",
+    "affiliateUrl": "https://c.onlyaff.app/8oTVFs",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "182",
+    "name": "Camiseta Polo Ralph Lauren",
+    "slug": "camiseta-polo-ralph-lauren-new-182",
+    "description": "Camiseta Polo Ralph Lauren de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 27,
+    "originalPrice": 68,
+    "image": "/images/products/new/camiseta-polo-ralph-lauren-new-182/1.jpg",
+    "category": "Camisetas",
+    "brand": "Polo",
+    "affiliateUrl": "https://c.onlyaff.app/8rFhqP",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "183",
+    "name": "Pantalon Essentials",
+    "slug": "pantalon-essentials-new-183",
+    "description": "Pantalon Essentials de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 11,
+    "originalPrice": 28,
+    "image": "/images/products/new/pantalon-essentials-new-183/1.jpg",
+    "category": "Moda",
+    "brand": "Essentials",
+    "affiliateUrl": "https://c.onlyaff.app/8rHtW3",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "184",
+    "name": "Asics Gel Kayano 14",
+    "slug": "asics-gel-kayano-14-new-184",
+    "description": "Asics Gel Kayano 14 de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 27,
+    "originalPrice": 68,
+    "image": "/images/products/new/asics-gel-kayano-14-new-184/1.jpg",
+    "category": "Accesorios",
+    "brand": "Gel",
+    "affiliateUrl": "https://c.onlyaff.app/8suHS4",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "185",
+    "name": "Asics Gel Nyc",
+    "slug": "asics-gel-nyc-new-185",
+    "description": "Asics Gel Nyc de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 23,
+    "originalPrice": 58,
+    "image": "/images/products/new/asics-gel-nyc-new-185/1.jpg",
+    "category": "Accesorios",
+    "brand": "Gel",
+    "affiliateUrl": "https://c.onlyaff.app/Qs2Co",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "186",
+    "name": "Camiseta Bape",
+    "slug": "camiseta-bape-new-186",
+    "description": "Camiseta Bape de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 16,
+    "originalPrice": 40,
+    "image": "/images/products/new/camiseta-bape-new-186/1.jpg",
+    "category": "Camisetas",
+    "brand": "Bape",
+    "affiliateUrl": "https://c.onlyaff.app/8swVdg",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
+  {
+    "id": "187",
+    "name": "Camiseta Syna World",
+    "slug": "camiseta-syna-world-new-187",
+    "description": "Camiseta Syna World de alta calidad. Diseño exclusivo y materiales premium para un estilo inigualable.",
+    "price": 13,
+    "originalPrice": 33,
+    "image": "/images/products/new/camiseta-syna-world-new-187/1.jpg",
+    "category": "Camisetas",
+    "brand": "Syna",
+    "affiliateUrl": "https://c.onlyaff.app/8swYxa",
+    "isExclusive": true,
+    "rating": 4.5,
+    "reviews": 10,
+    "isNew": true
+  },
 ];
